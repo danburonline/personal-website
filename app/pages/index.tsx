@@ -1,11 +1,6 @@
 import { Image, BlitzPage } from "blitz"
 import logo from "public/logo.png"
 
-/*
- * This file is just for a pleasant getting started page for your new app.
- * You can delete everything in here and start from scratch if you like.
- */
-
 const Home: BlitzPage = () => {
   return (
     <div className="container">

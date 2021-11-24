@@ -10,4 +10,5 @@ const config: BlitzConfig = {
   },
   */
 }
-module.exports = config
+
+export default config

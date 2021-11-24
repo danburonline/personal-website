@@ -6,8 +6,6 @@
     "build": "blitz build",
     "start": "blitz start",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
-    "test": "jest",
-    "test:watch": "jest --watch",
     "prepare": "husky install"
   },
   "prettier": {
@@ -20,9 +18,13 @@
     ]
   },
   "dependencies": {
+    "autoprefixer": "10.x",
     "blitz": "0.43.0",
+    "postcss": "8.x",
+    "react": "18.0.0-alpha-5ca4b0433-20211020",
     "react-dom": "18.0.0-alpha-5ca4b0433-20211020",
-    "react": "18.0.0-alpha-5ca4b0433-20211020"
+    "sharp": "0.29.3",
+    "tailwindcss": "2.x"
   },
   "devDependencies": {
     "@types/react": "17.0.36",
