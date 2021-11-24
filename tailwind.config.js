@@ -4,7 +4,12 @@ module.exports = {
   purge: ["{pages,app}/**/*.{js,ts,jsx,tsx}"],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#FFE000",
+        primaryDark: "#FFD000",
+      },
+    },
   },
   variants: {
     extend: {},

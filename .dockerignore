@@ -25,6 +25,7 @@
 *.sqlite-journal
 /.next/
 /.blitz/
+secrets
 web_modules/
 Dockerfile
 node_modules

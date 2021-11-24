@@ -18,6 +18,7 @@ blitz-log.log
 
 # Misc
 .DS_Store
+secrets
 
 # Local env files
 .env.local
