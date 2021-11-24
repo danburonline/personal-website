@@ -18,16 +18,20 @@
     ]
   },
   "dependencies": {
+    "@react-three/drei": "7.22.6",
+    "@react-three/fiber": "7.0.19",
     "autoprefixer": "10.x",
     "blitz": "0.43.0",
     "postcss": "8.x",
     "react": "18.0.0-alpha-5ca4b0433-20211020",
     "react-dom": "18.0.0-alpha-5ca4b0433-20211020",
     "sharp": "0.29.3",
-    "tailwindcss": "2.x"
+    "tailwindcss": "2.x",
+    "three": "0.134.0"
   },
   "devDependencies": {
     "@types/react": "17.0.36",
+    "@types/three": "0.134.0",
     "eslint": "7.32.0",
     "husky": "7.0.4",
     "lint-staged": "11.3.0-beta.2",
