@@ -1,6 +1,6 @@
 import { Document, Html, DocumentHead, Main, BlitzScript } from "blitz"
 
-class MyDocument extends Document {
+class CustomDocument extends Document {
   render() {
     return (
       <Html lang="en">
@@ -20,4 +20,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default CustomDocument

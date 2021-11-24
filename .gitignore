@@ -1,4 +1,4 @@
-# dependencies
+# Dependencies
 node_modules
 .yarn/cache
 .yarn/unplugged
@@ -7,7 +7,7 @@ node_modules
 .npm
 web_modules/
 
-# blitz
+# Blitz
 /.blitz/
 /.next/
 *.sqlite
@@ -16,10 +16,10 @@ web_modules/
 .blitz**
 blitz-log.log
 
-# misc
+# Misc
 .DS_Store
 
-# local env files
+# Local env files
 .env.local
 .env.*.local
 .envrc
