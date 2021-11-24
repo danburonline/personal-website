@@ -9,6 +9,9 @@ const config: BlitzConfig = {
     return config
   },
   */
+  images: {
+    domains: ["tailwindui.com"],
+  },
 }
 
 export default config
