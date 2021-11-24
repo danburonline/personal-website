@@ -3,9 +3,9 @@ import { Document, Html, DocumentHead, Main, BlitzScript } from "blitz"
 class CustomDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" className="bg-gray-900">
         <DocumentHead />
-        <title>Daniel Burger — Neurotech Software Engineer</title>
+        <title>Daniel Burger — Neurotech Engineer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"

@@ -1,8 +1,14 @@
+import Navigation from "app/components/Navigation"
 import { BlitzPage } from "blitz"
 import Hero from "../components/Hero"
 
 const Home: BlitzPage = () => {
-  return <Hero />
+  return (
+    <>
+      <Navigation />
+      <Hero />
+    </>
+  )
 }
 
 Home.suppressFirstRenderFlicker = true

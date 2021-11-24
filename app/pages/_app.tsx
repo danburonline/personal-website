@@ -5,7 +5,6 @@ import {
   ErrorFallbackProps,
   useQueryErrorResetBoundary,
 } from "blitz"
-
 import "app/core/styles/index.css"
 
 export default function App({ Component, pageProps }: AppProps) {
