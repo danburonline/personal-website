@@ -26,7 +26,7 @@ export default function Navigation() {
                     <div
                       className={classNames(
                         open ? "text-gray-400" : "text-gray-500",
-                        "inline-flex items-center text-base font-medium rounded-md group hover:text-gray-400"
+                        "inline-flex items-center text-base font-medium rounded-md group hover:text-gray-400 transition-colors"
                       )}
                     >
                       <FontAwesomeIcon
