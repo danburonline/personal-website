@@ -9,8 +9,8 @@ import {
   faFacebook,
   faDiscord,
   faRedditAlien,
-  faQuora,
   faTwitch,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons"
 import type { IconDefinition } from "@fortawesome/fontawesome-common-types"
 
@@ -45,13 +45,6 @@ const socialMediaChannels: socialMediaChannelType[] = [
     bgColor: "#fd7e14",
   },
   {
-    name: "YouTube",
-    description: "Connect with third-party tools that you're already using.",
-    href: "https://www.youtube.com/c/DanielBurgerOnline",
-    icon: faYoutube,
-    bgColor: "#fb000a",
-  },
-  {
     name: "LinkedIn",
     description: "Build strategic funnels that will drive your customers to convert",
     href: "https://www.linkedin.com/in/danburonline",
@@ -59,11 +52,18 @@ const socialMediaChannels: socialMediaChannelType[] = [
     bgColor: "#0077B5",
   },
   {
+    name: "YouTube",
+    description: "Connect with third-party tools that you're already using.",
+    href: "https://www.youtube.com/c/DanielBurgerOnline",
+    icon: faYoutube,
+    bgColor: "#fb000a",
+  },
+  {
     name: "Instagram",
     description: "Get detailed reports that will help you make more informed decisions ",
     href: "https://www.instagram.com/danburonline",
     icon: faInstagram,
-    bgColor: "#7e1caf",
+    bgColor: "#d7155a",
   },
   {
     name: "Twitter",
@@ -71,6 +71,13 @@ const socialMediaChannels: socialMediaChannelType[] = [
     href: "https://twitter.com/danburonline",
     icon: faTwitter,
     bgColor: "#08a0e9",
+  },
+  {
+    name: "TikTok",
+    description: "Get detailed reports that will help you make more informed decisions ",
+    href: "https://www.tiktok.com/@danburonline",
+    icon: faTiktok,
+    bgColor: "#000000",
   },
   {
     name: "Facebook",
@@ -92,14 +99,6 @@ const socialMediaChannels: socialMediaChannelType[] = [
     href: "https://www.reddit.com/user/danburonline",
     icon: faRedditAlien,
     bgColor: "#ff5700",
-  },
-  // TODO Replace with TikTok after optimising session
-  {
-    name: "Quora",
-    description: "Get detailed reports that will help you make more informed decisions ",
-    href: "https://www.quora.com/profile/Daniel-Burger-28",
-    icon: faQuora,
-    bgColor: "#a71b22",
   },
   {
     name: "Twitch",
