@@ -5,7 +5,7 @@ class CustomDocument extends Document {
     return (
       <Html lang="en" className="bg-gray-900">
         <DocumentHead />
-        <title>Daniel Burger — Neurotech Engineer</title>
+        <title>Daniel Burger — Software Engineer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <style>{`
         ::-moz-selection {

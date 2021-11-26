@@ -32,33 +32,33 @@ export default function DanielModel() {
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
-    <group ref={danielModelRef} dispose={null}>
+    <group scale={1.25} ref={danielModelRef} dispose={null}>
       <mesh geometry={nodes.Body.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
       <mesh geometry={nodes.Eyebrows.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
       <mesh geometry={nodes.Nose.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
       <mesh geometry={nodes.Ears.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
       <mesh geometry={nodes.Eyes.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
       <mesh geometry={nodes.Glasses.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
       <mesh geometry={nodes.Head.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
       <mesh geometry={nodes.SideHair.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
       <mesh geometry={nodes.TopHair.geometry}>
-        <meshStandardMaterial />
+        <meshStandardMaterial color={"#FFE000"} />
       </mesh>
     </group>
   )
