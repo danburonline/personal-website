@@ -3,7 +3,7 @@ import { faEnvelope, faCalendar } from "@fortawesome/free-solid-svg-icons"
 
 export default function Hero() {
   return (
-    <div className="relative flex items-center justify-center h-screen overflow-hidden bg-gray-900">
+    <div className="relative flex items-center justify-center h-screen overflow-hidden bg-gray-900 min-h-small">
       <div
         className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
         aria-hidden="true"
