@@ -27,9 +27,7 @@ export default function Model() {
     }
   })
 
-  const { nodes } = useGLTF(
-    "http://localhost:3000/models/brain-transformed.glb"
-  ) as unknown as BrainGLTFResult
+  const { nodes } = useGLTF("./models/brain-transformed.glb") as unknown as BrainGLTFResult
 
   return (
     <a.group ref={brainRef} dispose={null}>
@@ -37,7 +35,7 @@ export default function Model() {
         <MeshDistortMaterial
           attach="material"
           distort={0.125}
-          speed={10} // Speed (default=1)
+          speed={10}
           skinning={undefined}
           vertexTangents={undefined}
           morphTargets={undefined}
@@ -48,7 +46,7 @@ export default function Model() {
         <MeshDistortMaterial
           attach="material"
           distort={0.125}
-          speed={10} // Speed (default=1)
+          speed={10}
           skinning={undefined}
           vertexTangents={undefined}
           morphTargets={undefined}
@@ -59,7 +57,7 @@ export default function Model() {
         <MeshDistortMaterial
           attach="material"
           distort={0.125}
-          speed={10} // Speed (default=1)
+          speed={10}
           skinning={undefined}
           vertexTangents={undefined}
           morphTargets={undefined}
@@ -70,7 +68,7 @@ export default function Model() {
         <MeshDistortMaterial
           attach="material"
           distort={0.125}
-          speed={10} // Speed (default=1)
+          speed={10}
           skinning={undefined}
           vertexTangents={undefined}
           morphTargets={undefined}
@@ -81,4 +79,4 @@ export default function Model() {
   )
 }
 
-useGLTF.preload("http://localhost:3000/models/brain-transformed.glb")
+useGLTF.preload("./models/brain-transformed.glb")
