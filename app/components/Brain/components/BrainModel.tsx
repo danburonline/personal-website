@@ -1,23 +1,22 @@
-import * as THREE from "three"
-import React, { useMemo, useRef } from "react"
-import { useGLTF } from "@react-three/drei"
+import { useMemo, useRef } from "react"
+import { useGLTF, Shadow } from "@react-three/drei"
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
 import { useFrame, useThree } from "@react-three/fiber"
-import { Mesh } from "three"
+import { Mesh, Euler, Quaternion } from "three"
 import { a } from "@react-spring/three"
 
 type BrainGLTFResult = GLTF & {
   nodes: {
-    Cerebellum: THREE.Mesh
-    Stem: THREE.Mesh
-    Left: THREE.Mesh
-    Right: THREE.Mesh
+    Cerebellum: Mesh
+    Stem: Mesh
+    Left: Mesh
+    Right: Mesh
   }
 }
 
-export default function Model(props: JSX.IntrinsicElements["group"]) {
+export default function Model() {
   const brainRef = useRef<Mesh>()
-  const [rEuler, rQuaternion] = useMemo(() => [new THREE.Euler(), new THREE.Quaternion()], [])
+  const [rEuler, rQuaternion] = useMemo(() => [new Euler(), new Quaternion()], [])
   const { mouse } = useThree()
 
   useFrame(() => {
@@ -32,7 +31,7 @@ export default function Model(props: JSX.IntrinsicElements["group"]) {
   ) as unknown as BrainGLTFResult
 
   return (
-    <a.group scale={[0.5, 0.5, 0.5]} ref={brainRef} {...props} dispose={null}>
+    <a.group ref={brainRef} dispose={null}>
       <mesh geometry={nodes.Cerebellum.geometry}>
         <meshStandardMaterial />
       </mesh>
@@ -45,6 +44,7 @@ export default function Model(props: JSX.IntrinsicElements["group"]) {
       <mesh geometry={nodes.Right.geometry}>
         <meshStandardMaterial />
       </mesh>
+      <Shadow opacity={0.5} scale={[8, 5, 1]} position={[0, -4.5, 0]} />
     </a.group>
   )
 }
