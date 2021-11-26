@@ -1,66 +1,51 @@
-import React, { useRef } from "react"
+import * as THREE from "three"
+import React, { useMemo, useRef } from "react"
 import { useGLTF } from "@react-three/drei"
-import { useFrame } from "@react-three/fiber"
+import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
+import { useFrame, useThree } from "@react-three/fiber"
 import { Mesh } from "three"
-import type { BrainGLTFResult } from "../types"
+import { a } from "@react-spring/three"
 
-export default function BrainModel(props) {
-  const { nodes, materials } = useGLTF(
-    "http://localhost:3000/models/brain-transformed.glb"
-  ) as unknown as BrainGLTFResult
+type BrainGLTFResult = GLTF & {
+  nodes: {
+    Cerebellum: THREE.Mesh
+    Stem: THREE.Mesh
+    Left: THREE.Mesh
+    Right: THREE.Mesh
+  }
+}
 
+export default function Model(props: JSX.IntrinsicElements["group"]) {
   const brainRef = useRef<Mesh>()
+  const [rEuler, rQuaternion] = useMemo(() => [new THREE.Euler(), new THREE.Quaternion()], [])
+  const { mouse } = useThree()
+
   useFrame(() => {
     if (brainRef && brainRef.current) {
-      brainRef.current!.rotation.y += 0.005
+      rEuler.set((-mouse.y * Math.PI) / 10, (mouse.x * Math.PI) / 6, 0)
+      brainRef.current.quaternion.slerp(rQuaternion.setFromEuler(rEuler), 0.1)
     }
   })
 
+  const { nodes } = useGLTF(
+    "http://localhost:3000/models/brain-transformed.glb"
+  ) as unknown as BrainGLTFResult
+
   return (
-    <group ref={brainRef} {...props} dispose={null} scale={[0.05, 0.05, 0.05]}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Pituitary.geometry}
-        material={materials.wire_134110008}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cerebellum.geometry}
-        material={materials.wire_028089177}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Brain_Center.geometry}
-        material={materials.wire_224198087}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Stem.geometry}
-        material={materials.wire_134006006}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Brain_1.geometry}
-        material={materials.wire_177028149}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Brain_1001_Brain_1002.geometry}
-        material={materials["wire_177028149.002"]}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-    </group>
+    <a.group scale={[0.5, 0.5, 0.5]} ref={brainRef} {...props} dispose={null}>
+      <mesh geometry={nodes.Cerebellum.geometry}>
+        <meshStandardMaterial />
+      </mesh>
+      <mesh geometry={nodes.Stem.geometry}>
+        <meshStandardMaterial />
+      </mesh>
+      <mesh name="Left" geometry={nodes.Left.geometry}>
+        <meshStandardMaterial />
+      </mesh>
+      <mesh geometry={nodes.Right.geometry}>
+        <meshStandardMaterial />
+      </mesh>
+    </a.group>
   )
 }
 

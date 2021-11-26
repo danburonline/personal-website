@@ -4,7 +4,7 @@ import HeroDecorations from "./components/HeroDecorations"
 
 export default function Hero() {
   return (
-    <div className="relative flex items-center justify-center h-screen overflow-hidden min-h-small">
+    <div className="relative flex items-center justify-center h-screen overflow-hidden pointer-events-none min-h-small">
       <HeroDecorations />
       <div className="relative pt-6 pb-16 sm:pb-24">
         <main className="px-6 mx-auto mt-16 max-w-7xl sm:mt-24">
@@ -18,7 +18,7 @@ export default function Hero() {
               computing with artificial intelligence at Middlesex University.
             </h2>
             <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
-              <div className="rounded-md shadow">
+              <div className="rounded-md shadow pointer-events-auto">
                 <a
                   href="mailto:public@danielburger.online"
                   className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-gray-800 transition-colors border border-transparent rounded-md bg-primary hover:bg-primaryDark md:py-4 md:text-lg md:px-10"
@@ -27,7 +27,7 @@ export default function Hero() {
                   Contact me
                 </a>
               </div>
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+              <div className="mt-3 rounded-md shadow pointer-events-auto sm:mt-0 sm:ml-3">
                 <a
                   href="https://calendly.com/danburonline/meet"
                   target="_blank"
