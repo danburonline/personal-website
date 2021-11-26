@@ -31,9 +31,11 @@
     "postcss": "8.x",
     "react": "18.0.0-alpha-5ca4b0433-20211020",
     "react-dom": "18.0.0-alpha-5ca4b0433-20211020",
+    "react-typewriter-effect": "1.1.0",
     "sharp": "0.29.3",
     "tailwindcss": "2.x",
-    "three": "0.134.0"
+    "three": "0.134.0",
+    "typewriter-effect": "2.18.2"
   },
   "devDependencies": {
     "@types/react": "17.0.36",

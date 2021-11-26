@@ -8,7 +8,7 @@ export default function Daniel() {
       <div className="fixed z-10 w-screen h-screen bg-gray-900 pointer-events-none bg-opacity-60"></div>
       <Canvas>
         <ambientLight intensity={0.01} />
-        <fog attach="fog" args={["#202020", 5, 20]} />
+        <fog attach="fog" args={["#202020", 1, 10]} />
         <directionalLight color="white" position={[0, 3, 0]} intensity={0.5} />
         <directionalLight color="white" position={[-1, -3, 0]} intensity={0.2} />
         <Suspense fallback={null}>

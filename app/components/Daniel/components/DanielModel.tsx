@@ -32,7 +32,7 @@ export default function DanielModel() {
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
-    <group scale={1.25} ref={danielModelRef} dispose={null}>
+    <group scale={1.3} ref={danielModelRef} dispose={null}>
       <mesh geometry={nodes.Body.geometry}>
         <meshStandardMaterial color={"#FFE000"} />
       </mesh>

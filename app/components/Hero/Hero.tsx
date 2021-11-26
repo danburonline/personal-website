@@ -1,6 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faCalendar } from "@fortawesome/free-solid-svg-icons"
+import { dynamic } from "blitz"
 import HeroDecorations from "./components/HeroDecorations"
+
+const TypeWriter = dynamic(() => import("./components/TypeWriter"), {
+  ssr: false,
+})
 
 export default function Hero() {
   return (
@@ -11,12 +16,14 @@ export default function Hero() {
           <div className="text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
               <span className="block">Daniel Burger,</span>
-              <span className="block text-primary xl:inline">neurotech engineer</span>
+              <TypeWriter />
             </h1>
-            <h2 className="max-w-md mx-auto mt-3 text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Building brain-machine interface software at IDUN Technologies and combining spatial
-              computing with artificial intelligence at Middlesex University.
+
+            <h2 className="mx-auto mt-3 text-base text-gray-300 md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl">
+              Building brain-machine interface software at IDUN Technologies in Zürich and combining
+              spatial computing with artificial intelligence at Middlesex University, London.
             </h2>
+
             <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow pointer-events-auto">
                 <a
