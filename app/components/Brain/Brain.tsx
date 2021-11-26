@@ -5,9 +5,10 @@ import BrainModel from "./components/BrainModel"
 export default function Brain() {
   return (
     <div className="fixed w-screen h-screen bg-gray-900 z-5">
+      <div className="fixed z-10 w-screen h-screen bg-gray-900 opacity-75"></div>
       <Canvas>
-        <ambientLight intensity={0.1} />
-        <directionalLight color="red" position={[0, 0, 5]} />
+        <ambientLight intensity={0.05} />
+        <directionalLight color="#FFE000" position={[0, 0, 5]} />
         <Suspense fallback={null}>
           <BrainModel />
         </Suspense>
