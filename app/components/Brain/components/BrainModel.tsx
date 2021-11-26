@@ -1,9 +1,10 @@
 import { useMemo, useRef } from "react"
-import { useGLTF, Shadow } from "@react-three/drei"
+import { useGLTF } from "@react-three/drei"
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
 import { useFrame, useThree } from "@react-three/fiber"
 import { Mesh, Euler, Quaternion } from "three"
 import { a } from "@react-spring/three"
+import { MeshDistortMaterial } from "@react-three/drei"
 
 type BrainGLTFResult = GLTF & {
   nodes: {
@@ -33,18 +34,49 @@ export default function Model() {
   return (
     <a.group ref={brainRef} dispose={null}>
       <mesh geometry={nodes.Cerebellum.geometry}>
-        <meshStandardMaterial />
+        <MeshDistortMaterial
+          attach="material"
+          distort={0.125}
+          speed={10} // Speed (default=1)
+          skinning={undefined}
+          vertexTangents={undefined}
+          morphTargets={undefined}
+          morphNormals={undefined}
+        />
       </mesh>
       <mesh geometry={nodes.Stem.geometry}>
-        <meshStandardMaterial />
+        <MeshDistortMaterial
+          attach="material"
+          distort={0.125}
+          speed={10} // Speed (default=1)
+          skinning={undefined}
+          vertexTangents={undefined}
+          morphTargets={undefined}
+          morphNormals={undefined}
+        />
       </mesh>
       <mesh name="Left" geometry={nodes.Left.geometry}>
-        <meshStandardMaterial />
+        <MeshDistortMaterial
+          attach="material"
+          distort={0.125}
+          speed={10} // Speed (default=1)
+          skinning={undefined}
+          vertexTangents={undefined}
+          morphTargets={undefined}
+          morphNormals={undefined}
+        />
       </mesh>
       <mesh geometry={nodes.Right.geometry}>
-        <meshStandardMaterial />
+        <MeshDistortMaterial
+          attach="material"
+          distort={0.125}
+          speed={10} // Speed (default=1)
+          skinning={undefined}
+          vertexTangents={undefined}
+          morphTargets={undefined}
+          morphNormals={undefined}
+        />
       </mesh>
-      <Shadow opacity={0.5} scale={[8, 5, 1]} position={[0, -4.5, 0]} />
     </a.group>
   )
 }
