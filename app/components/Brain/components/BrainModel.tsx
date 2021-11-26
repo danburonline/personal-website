@@ -1,30 +1,10 @@
-import * as THREE from "three"
-import React, { Suspense, useRef } from "react"
-import { OrbitControls, useGLTF } from "@react-three/drei"
-import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
-import { Canvas, useFrame } from "@react-three/fiber"
+import React, { useRef } from "react"
+import { useGLTF } from "@react-three/drei"
+import { useFrame } from "@react-three/fiber"
 import { Mesh } from "three"
+import type { BrainGLTFResult } from "../types"
 
-type BrainGLTFResult = GLTF & {
-  nodes: {
-    Pituitary: THREE.Mesh
-    Cerebellum: THREE.Mesh
-    Brain_Center: THREE.Mesh
-    Stem: THREE.Mesh
-    Brain_1: THREE.Mesh
-    Brain_1001_Brain_1002: THREE.Mesh
-  }
-  materials: {
-    wire_134110008: THREE.MeshStandardMaterial
-    wire_028089177: THREE.MeshStandardMaterial
-    wire_224198087: THREE.MeshStandardMaterial
-    wire_134006006: THREE.MeshStandardMaterial
-    wire_177028149: THREE.MeshStandardMaterial
-    ["wire_177028149.002"]: THREE.MeshStandardMaterial
-  }
-}
-
-function BrainModel(props) {
+export default function BrainModel(props) {
   const { nodes, materials } = useGLTF(
     "http://localhost:3000/models/brain-transformed.glb"
   ) as unknown as BrainGLTFResult
@@ -81,21 +61,6 @@ function BrainModel(props) {
         rotation={[Math.PI / 2, 0, 0]}
       />
     </group>
-  )
-}
-
-export default function Brain() {
-  return (
-    <div className="fixed w-screen h-screen bg-gray-900 z-5">
-      <Canvas>
-        <ambientLight intensity={0.1} />
-        <directionalLight color="red" position={[0, 0, 5]} />
-        <Suspense fallback={null}>
-          <BrainModel />
-        </Suspense>
-        <OrbitControls />
-      </Canvas>
-    </div>
   )
 }
 
