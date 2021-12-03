@@ -15,7 +15,7 @@ export default function Hero() {
         <main className="px-6 mx-auto mt-16 max-w-7xl sm:mt-24">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
-              <span className="block">Daniel Burger,</span>
+              <span className="block">Daniel Burger</span>
               <TypeWriter />
             </h1>
 

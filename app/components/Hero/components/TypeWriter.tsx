@@ -9,7 +9,6 @@ export default function TypeWriter() {
         cursorColor="#FFE000"
         multiText={[
           "software engineer",
-          "neurotech engineer",
           "web developer",
           "game developer",
           "interface designer",

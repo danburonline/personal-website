@@ -18,7 +18,11 @@ type DanielModelGLTFResult = GLTF & {
   }
 }
 
-export default function DanielModel() {
+type DanielModelProps = {
+  scale?: number
+}
+
+export default function DanielModel({ scale = 1.3 }: DanielModelProps) {
   const danielModelRef = useRef<Mesh>()
   const [fiberEuler, fiberQuaternion] = useMemo(() => [new Euler(), new Quaternion()], [])
   const { mouse } = useThree()
@@ -32,7 +36,7 @@ export default function DanielModel() {
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
-    <group scale={1.3} ref={danielModelRef} dispose={null}>
+    <group scale={scale} ref={danielModelRef} dispose={null}>
       <mesh geometry={nodes.Body.geometry}>
         <meshStandardMaterial color={"#FFE000"} />
       </mesh>
