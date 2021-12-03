@@ -2,9 +2,21 @@
 module.exports = {
   mode: "jit",
   purge: ["{pages,app}/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
-    extend: {},
+    minHeight: {
+      0: "0",
+      small: "350px",
+      medium: "650px",
+      large: "800px",
+      full: "100%",
+    },
+    extend: {
+      colors: {
+        primary: "#FFE000",
+        primaryDark: "#FFD000",
+      },
+    },
   },
   variants: {
     extend: {},

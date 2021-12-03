@@ -18,6 +18,12 @@
     ]
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.36",
+    "@fortawesome/free-brands-svg-icons": "5.15.4",
+    "@fortawesome/free-solid-svg-icons": "5.15.4",
+    "@fortawesome/react-fontawesome": "0.1.16",
+    "@headlessui/react": "1.4.2",
+    "@react-spring/three": "9.3.1",
     "@react-three/drei": "7.22.6",
     "@react-three/fiber": "7.0.19",
     "autoprefixer": "10.x",
@@ -25,9 +31,12 @@
     "postcss": "8.x",
     "react": "18.0.0-alpha-5ca4b0433-20211020",
     "react-dom": "18.0.0-alpha-5ca4b0433-20211020",
+    "react-responsive": "9.0.0-beta.5",
+    "react-typewriter-effect": "1.1.0",
     "sharp": "0.29.3",
     "tailwindcss": "2.x",
-    "three": "0.134.0"
+    "three": "0.134.0",
+    "typewriter-effect": "2.18.2"
   },
   "devDependencies": {
     "@types/react": "17.0.36",

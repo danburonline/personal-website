@@ -1,19 +1,14 @@
+import Navigation from "app/components/Navigation"
 import { BlitzPage } from "blitz"
-import { Canvas } from "@react-three/fiber"
-import { OrbitControls } from "@react-three/drei"
+import Hero from "../components/Hero"
+import Daniel from "../components/Daniel"
 
 const Home: BlitzPage = () => {
   return (
     <>
-      <h1>Hello World</h1>
-      <ambientLight />
-      <Canvas>
-        <mesh>
-          <boxGeometry />
-          <meshStandardMaterial />
-        </mesh>
-        <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
-      </Canvas>
+      <Daniel />
+      <Navigation />
+      <Hero />
     </>
   )
 }
