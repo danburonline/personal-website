@@ -25,9 +25,26 @@ export default function Hero() {
             </h1>
 
             <h2 className="mx-auto mt-3 text-base text-gray-300 md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl">
-              Building brain-machine interface software at IDUN Technologies{" "}
+              Building brain-machine interface software at{" "}
+              <a
+                href="https://iduntechnologies.ch"
+                target="_blank"
+                rel="noreferrer"
+                className="pointer-events-auto hover:underline"
+              >
+                IDUN Technologies
+              </a>{" "}
               {isMobileWidth ? null : "in Zürich"} and combining spatial computing with artificial
-              intelligence at Middlesex University{isMobileWidth ? null : ", London"}.
+              intelligence at{" "}
+              <a
+                href="https://www.mdx.ac.uk"
+                target="_blank"
+                rel="noreferrer"
+                className="pointer-events-auto hover:underline"
+              >
+                Middlesex University
+              </a>
+              {isMobileWidth ? null : ", London"}.
             </h2>
 
             <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
