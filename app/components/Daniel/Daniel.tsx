@@ -19,7 +19,7 @@ export default function Daniel() {
     <div className="fixed w-screen h-screen bg-gray-900 z-5">
       <div className="fixed z-10 w-screen h-screen bg-gray-900 pointer-events-none bg-opacity-60"></div>
       <Canvas>
-        <ambientLight intensity={0.01} />
+        <ambientLight intensity={0.02} />
         <fog attach="fog" args={["#202020", 1, 10]} />
         <directionalLight color="white" position={[0, 3, 0]} intensity={0.5} />
         <directionalLight color="white" position={[-1, -3, 0]} intensity={0.2} />

@@ -31,17 +31,17 @@ export default function DanielModel({
   const danielModelRef = useRef<Mesh>()
   const [fiberEuler, fiberQuaternion] = useMemo(() => [new Euler(), new Quaternion()], [])
   const { mouse } = useThree()
-  const { alpha, beta, gamma } = useDeviceOrientation()
+  const { gamma } = useDeviceOrientation()
 
   useFrame(() => {
     if (danielModelRef && danielModelRef.current) {
       fiberEuler.set((-mouse.y * Math.PI) / 10, (mouse.x * Math.PI) / 6, 0)
       danielModelRef.current.quaternion.slerp(fiberQuaternion.setFromEuler(fiberEuler), 0.1)
-    }
 
-    if (rotateByDeviceOrientation) {
-      // TODO Implement the rotation of the model
-      console.log(alpha, beta, gamma)
+      if (rotateByDeviceOrientation) {
+        fiberEuler.set(0, gamma * 0.5 * Math.PI, 0)
+        danielModelRef.current.quaternion.slerp(fiberQuaternion.setFromEuler(fiberEuler), 0.1)
+      }
     }
   })
 
