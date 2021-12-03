@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faCalendar } from "@fortawesome/free-solid-svg-icons"
 import { dynamic } from "blitz"
+import { useMediaQuery } from "react-responsive"
 import HeroDecorations from "./components/HeroDecorations"
 
 const TypeWriter = dynamic(() => import("./components/TypeWriter"), {
@@ -8,6 +9,10 @@ const TypeWriter = dynamic(() => import("./components/TypeWriter"), {
 })
 
 export default function Hero() {
+  const isMobileWidth = useMediaQuery({
+    query: "(max-width: 639px)",
+  })
+
   return (
     <div className="relative flex items-center justify-center h-screen overflow-hidden pointer-events-none min-h-small">
       <HeroDecorations />
@@ -20,8 +25,9 @@ export default function Hero() {
             </h1>
 
             <h2 className="mx-auto mt-3 text-base text-gray-300 md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl">
-              Building brain-machine interface software at IDUN Technologies in Zürich and combining
-              spatial computing with artificial intelligence at Middlesex University, London.
+              Building brain-machine interface software at IDUN Technologies{" "}
+              {isMobileWidth ? null : "in Zürich"} and combining spatial computing with artificial
+              intelligence at Middlesex University{isMobileWidth ? null : ", London"}.
             </h2>
 
             <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">

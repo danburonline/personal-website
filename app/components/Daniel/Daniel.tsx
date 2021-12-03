@@ -6,7 +6,7 @@ import useSupportsDeviceOrientation from "../../hooks/useSupportsDeviceOrientati
 
 export default function Daniel() {
   const isTabletWidth = useMediaQuery({
-    query: "(max-width: 800px)",
+    query: "(max-width: 799px)",
   })
 
   const isMobileWidth = useMediaQuery({
