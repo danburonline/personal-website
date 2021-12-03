@@ -1,8 +1,9 @@
-import { useMemo, useRef } from "react"
+import { useMemo, useRef, useState } from "react"
 import { useGLTF } from "@react-three/drei"
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
 import { useFrame, useThree } from "@react-three/fiber"
 import { Euler, Mesh, Quaternion } from "three"
+import useDeviceOrientation from "../hooks/useDeviceOrientation"
 
 type DanielModelGLTFResult = GLTF & {
   nodes: {
@@ -20,17 +21,27 @@ type DanielModelGLTFResult = GLTF & {
 
 type DanielModelProps = {
   scale?: number
+  rotateByDeviceOrientation?: boolean
 }
 
-export default function DanielModel({ scale = 1.3 }: DanielModelProps) {
+export default function DanielModel({
+  scale = 1.3,
+  rotateByDeviceOrientation = false,
+}: DanielModelProps) {
   const danielModelRef = useRef<Mesh>()
   const [fiberEuler, fiberQuaternion] = useMemo(() => [new Euler(), new Quaternion()], [])
   const { mouse } = useThree()
+  const { alpha, beta, gamma } = useDeviceOrientation()
 
   useFrame(() => {
     if (danielModelRef && danielModelRef.current) {
       fiberEuler.set((-mouse.y * Math.PI) / 10, (mouse.x * Math.PI) / 6, 0)
       danielModelRef.current.quaternion.slerp(fiberQuaternion.setFromEuler(fiberEuler), 0.1)
+    }
+
+    if (rotateByDeviceOrientation) {
+      // TODO Implement the rotation of the model
+      console.log(alpha, beta, gamma)
     }
   })
 
