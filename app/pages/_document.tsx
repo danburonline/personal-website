@@ -14,7 +14,7 @@ class CustomDocument extends Document {
         <meta property="twitter:site" content="@danburonline" />
         <meta
           property="og:description"
-          content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background."
+          content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
         />
         <meta property="og:url" content="https://danielburger.online" />
         <meta property="og:type" content="website" />
