@@ -7,6 +7,32 @@ class CustomDocument extends Document {
         <DocumentHead />
         <title>Daniel Burger — Software Engineer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="canonical" href="https://danielburger.online" />
+        <meta name="robots" content="all" />
+        <meta property="og:site_name" content="Daniel Burger — Software Engineer" />
+        <meta property="og:title" content="Daniel Burger — Software Engineer" />
+        <meta property="twitter:site" content="@danburonline" />
+        <meta
+          property="og:description"
+          content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background."
+        />
+        <meta property="og:url" content="https://danielburger.online" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://danielburger.online/img/opengraph/default-social-card.jpg"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://danielburger.online/img/opengraph/default-social-card.jpg"
+        />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="640" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:image"
+          content="https://danielburger.online/img/opengraph/default-social-card.jpg"
+        />
         <style>{`
         ::-moz-selection {
           background: #FFE000;
