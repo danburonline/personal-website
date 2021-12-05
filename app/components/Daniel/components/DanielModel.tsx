@@ -57,6 +57,9 @@ export default function DanielModel({
     }
   })
 
+  // TODO Add a more compressed version of the model
+  // TODO Add more interesting post-processing effects and filters
+
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
     <animated.group scale={scale} ref={danielModelRef} dispose={null}>
