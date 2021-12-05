@@ -19,12 +19,22 @@ class CustomDocument extends Document {
         ::selection {
           background: #FFE000;
           color: black;
-        }`}</style>
+        }
+
+        body {
+          height: 100vh;
+          max-height: -webkit-fill-available;
+        }
+        html {
+          height: -webkit-fill-available;
+        }
+
+        `}</style>
         <meta
           name="description"
           content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
         />
-        <body style={{ height: "100%", position: "relative" }}>
+        <body>
           <Main />
           <BlitzScript />
         </body>
