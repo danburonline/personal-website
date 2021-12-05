@@ -1,9 +1,9 @@
-import Navigation from "app/components/Navigation"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import { BlitzPage } from "blitz"
 import { dynamic } from "blitz"
-import Hero from "../components/Hero"
-import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config } from "@fortawesome/fontawesome-svg-core"
+import Hero from "../components/Hero"
+import Navigation from "app/components/Navigation"
 
 const LazyDaniel = dynamic(() => import("../components/Daniel"), {
   ssr: false,
