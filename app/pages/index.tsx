@@ -1,12 +1,16 @@
 import Navigation from "app/components/Navigation"
 import { BlitzPage } from "blitz"
+import { dynamic } from "blitz"
 import Hero from "../components/Hero"
-import Daniel from "../components/Daniel"
+
+const LazyDaniel = dynamic(() => import("../components/Daniel"), {
+  ssr: false,
+})
 
 const Home: BlitzPage = () => {
   return (
     <>
-      <Daniel />
+      <LazyDaniel />
       <Navigation />
       <Hero />
     </>

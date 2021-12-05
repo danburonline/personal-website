@@ -1,9 +1,10 @@
-import { useMemo, useRef, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import { useGLTF } from "@react-three/drei"
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
 import { useFrame, useThree } from "@react-three/fiber"
 import { Euler, Mesh, Quaternion } from "three"
 import useDeviceOrientation from "../hooks/useDeviceOrientation"
+import { animated, useSpring, config } from "@react-spring/three"
 
 type DanielModelGLTFResult = GLTF & {
   nodes: {
@@ -21,17 +22,28 @@ type DanielModelGLTFResult = GLTF & {
 
 type DanielModelProps = {
   scale?: number
+  color?: string
   rotateByDeviceOrientation?: boolean
 }
 
 export default function DanielModel({
-  scale = 1.3,
+  scale: propsScale = 1.3,
+  color: propsColor = "#FFE000",
   rotateByDeviceOrientation = false,
 }: DanielModelProps) {
   const danielModelRef = useRef<Mesh>()
+  const [doneLoading, setDoneLoading] = useState(false)
   const [fiberEuler, fiberQuaternion] = useMemo(() => [new Euler(), new Quaternion()], [])
   const { mouse } = useThree()
   const { gamma } = useDeviceOrientation()
+  const { scale } = useSpring({
+    scale: doneLoading ? propsScale : 0,
+    config: config.stiff,
+  })
+
+  useEffect(() => {
+    setDoneLoading(true)
+  }, [setDoneLoading])
 
   useFrame(() => {
     if (danielModelRef && danielModelRef.current) {
@@ -47,35 +59,35 @@ export default function DanielModel({
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
-    <group scale={scale} ref={danielModelRef} dispose={null}>
+    <animated.group scale={scale} ref={danielModelRef} dispose={null}>
       <mesh geometry={nodes.Body.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
       <mesh geometry={nodes.Eyebrows.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
       <mesh geometry={nodes.Nose.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
       <mesh geometry={nodes.Ears.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
       <mesh geometry={nodes.Eyes.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
       <mesh geometry={nodes.Glasses.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
       <mesh geometry={nodes.Head.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
       <mesh geometry={nodes.SideHair.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
       <mesh geometry={nodes.TopHair.geometry}>
-        <meshStandardMaterial color={"#FFE000"} />
+        <meshStandardMaterial color={propsColor} />
       </mesh>
-    </group>
+    </animated.group>
   )
 }
 
