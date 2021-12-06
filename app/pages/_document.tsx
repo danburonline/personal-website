@@ -15,6 +15,9 @@ class CustomDocument extends Document {
         <meta name="robots" content="index, follow" />
         <meta property="og:site_name" content="Daniel Burger — Software Engineer" />
         <meta property="og:title" content="Daniel Burger — Software Engineer" />
+        <meta property="og:url" content="https://danielburger.online" />
+        <meta property="og:type" content="website" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@danburonline" />
         <meta
           property="og:description"
@@ -26,9 +29,6 @@ class CustomDocument extends Document {
           property="og:image"
           content="https://danielburger.online/img/opengraph/default-social-card.jpg"
         />
-        <meta property="og:url" content="https://danielburger.online" />
-        <meta property="og:type" content="website" />
-        <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
           content="https://danielburger.online/img/opengraph/default-social-card.jpg"
