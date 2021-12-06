@@ -6,9 +6,13 @@ class CustomDocument extends Document {
       <Html lang="en" className="bg-gray-900">
         <DocumentHead />
         <title>Daniel Burger — Software Engineer</title>
+        <meta name="author" content="Daniel Burger" />
+        <meta property="article:published_time" content="2021-12-6" />
+        <meta property="article:modified_time" content="2021-12-6T11:45:30+00:00" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="theme-color" content="#111827" />
         <link rel="canonical" href="https://danielburger.online" />
-        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
         <meta property="og:site_name" content="Daniel Burger — Software Engineer" />
         <meta property="og:title" content="Daniel Burger — Software Engineer" />
         <meta property="twitter:site" content="@danburonline" />
@@ -24,6 +28,8 @@ class CustomDocument extends Document {
           content="https://danielburger.online/img/opengraph/default-social-card.jpg"
         />
         <meta property="twitter:card" content="summary_large_image" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
         <meta
           property="twitter:image"
           content="https://danielburger.online/img/opengraph/default-social-card.jpg"
