@@ -10,7 +10,7 @@ export default function MobileNavigation() {
       {({ open }) => (
         <>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 transition-colors rounded-md hover:text-gray-500 hover:bg-gray-100">
+            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-500 transition-colors rounded-md hover:text-gray-400 ">
               <span className="w-6 h-6 mr-2" aria-hidden="true">
                 <FontAwesomeIcon icon={faBars} size="lg" />
               </span>
