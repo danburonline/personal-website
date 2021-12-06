@@ -5,34 +5,31 @@ class CustomDocument extends Document {
     return (
       <Html lang="en" className="bg-gray-900">
         <DocumentHead />
+        {/* TODO Create a better social card image as soon as I finish the hero 3D model part */}
         <title>Daniel Burger — Software Engineer</title>
-        <meta name="author" content="Daniel Burger" />
-        <meta property="article:published_time" content="2021-12-6" />
-        <meta property="article:modified_time" content="2021-12-6T11:45:30+00:00" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="author" content="Daniel Burger" />
         <meta name="theme-color" content="#111827" />
         <link rel="canonical" href="https://danielburger.online" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:site_name" content="Daniel Burger — Software Engineer" />
-        <meta property="og:title" content="Daniel Burger — Software Engineer" />
-        <meta property="og:url" content="https://danielburger.online" />
-        <meta property="og:type" content="website" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@danburonline" />
         <meta
-          property="og:description"
+          name="description"
           content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
         />
-        {/* TODO Create a better social card image as soon as I finish the hero 3D model part */}
+
+        <meta property="og:title" content="Daniel Burger — Software Engineer" />
+        <meta property="og:site_name" content="Daniel Burger" />
+        <meta property="og:url" content="https://danielburger.online" />
+        <meta property="og:image" content="https://danielburger.online/img/social/opengraph.png" />
+        <meta property="og:type" content="website" />
         <meta
-          name="image"
-          property="og:image"
-          content="https://danielburger.online/img/social/opengraph.png"
+          property="og:description"
+          content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background."
         />
-        <meta
-          property="twitter:image"
-          content="https://danielburger.online/img/social/opengraph.png"
-        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:site" content="@danburonline" />
+
         <style>{`
         ::-moz-selection {
           background: #FFE000;
@@ -56,10 +53,6 @@ class CustomDocument extends Document {
         }
 
         `}</style>
-        <meta
-          name="description"
-          content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
-        />
         <body>
           <Main />
           <BlitzScript />
