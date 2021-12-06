@@ -7,15 +7,7 @@ import socialMediaChannels from "../data/socialMediaChannels"
 
 export default function DesktopNavigation() {
   return (
-    <div className="flex items-center justify-between px-4 py-6">
-      <div className="-my-2 -mr-2 md:hidden">
-        <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 transition-colors rounded-md hover:text-gray-500 hover:bg-gray-100">
-          <span className="w-6 h-6 mr-2" aria-hidden="true">
-            <FontAwesomeIcon icon={faBars} size="lg" />
-          </span>
-          <span>Menu</span>
-        </Popover.Button>
-      </div>
+    <div className="items-center justify-between hidden px-4 py-6 md:flex">
       <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
         <Popover.Group as="nav" className="flex ml-4 space-x-10">
           <Popover className="relative">

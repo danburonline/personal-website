@@ -16,6 +16,11 @@ module.exports = {
         primary: "#FFE000",
         primaryDark: "#FFD000",
       },
+      height: {
+        small: "350px",
+        medium: "650px",
+        large: "800px",
+      },
     },
   },
   variants: {
