@@ -1,7 +1,7 @@
 export default function HeroDecorations() {
   return (
     <div
-      className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
+      className="hidden overflow-hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
       aria-hidden="true"
     >
       <div className="relative h-full mx-auto max-w-7xl">

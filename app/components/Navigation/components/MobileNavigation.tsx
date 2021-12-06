@@ -31,12 +31,12 @@ export default function MobileNavigation() {
           >
             <Popover.Panel
               focus
-              className="absolute inset-x-0 top-0 p-3 overflow-hidden transition transform origin-top-center md:hidden"
+              className="absolute inset-x-0 top-0 h-screen p-3 overflow-hidden transition transform origin-top-center md:hidden"
             >
-              <div className="h-screen max-h-[calc(100vh-1.5rem)] pb-3 overflow-x-hidden overflow-y-scroll bg-white rounded-lg shadow-lg">
+              <div className="h-full max-h-[54rem] pb-3 overflow-x-hidden overflow-y-scroll bg-white rounded-lg shadow-lg">
                 <div className="items-center justify-between">
                   <div className="fixed flex pt-6 pb-5 -mr-2 bg-white rounded-lg w-full max-w-[calc(100%-1.5rem)]">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 ml-6 text-gray-400 transition-colors bg-gray-100 rounded-md hover:text-gray-500">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 pr-3 ml-6 text-gray-400 transition-colors bg-gray-100 rounded-md hover:text-gray-500">
                       <span className="w-6 h-6 mr-2" aria-hidden="true">
                         <FontAwesomeIcon icon={faTimes} size="lg" />
                       </span>
