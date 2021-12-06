@@ -23,12 +23,6 @@ class CustomDocument extends Document {
           property="og:image"
           content="https://danielburger.online/img/opengraph/default-social-card.jpg"
         />
-        <meta
-          property="og:image:secure_url"
-          content="https://danielburger.online/img/opengraph/default-social-card.jpg"
-        />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="640" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
