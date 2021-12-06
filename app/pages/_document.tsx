@@ -20,16 +20,14 @@ class CustomDocument extends Document {
           property="og:description"
           content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
         />
-        <meta property="og:url" content="https://danielburger.online" />
-        <meta property="og:type" content="website" />
         {/* TODO Create a better social card image as soon as I finish the hero 3D model part */}
         <meta
           property="og:image"
           content="https://danielburger.online/img/opengraph/default-social-card.jpg"
         />
+        <meta property="og:url" content="https://danielburger.online" />
+        <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="og:image:width" content="1920" />
-        <meta property="og:image:height" content="1080" />
         <meta
           property="twitter:image"
           content="https://danielburger.online/img/opengraph/default-social-card.jpg"
