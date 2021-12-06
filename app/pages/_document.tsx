@@ -27,11 +27,11 @@ class CustomDocument extends Document {
         <meta
           name="image"
           property="og:image"
-          content="https://danielburger.online/img/opengraph/default-social-card.jpg"
+          content="https://danielburger.online/img/social/opengraph.png"
         />
         <meta
           property="twitter:image"
-          content="https://danielburger.online/img/opengraph/default-social-card.jpg"
+          content="https://danielburger.online/img/social/opengraph.png"
         />
         <style>{`
         ::-moz-selection {
