@@ -22,6 +22,7 @@ class CustomDocument extends Document {
         />
         {/* TODO Create a better social card image as soon as I finish the hero 3D model part */}
         <meta
+          name="image"
           property="og:image"
           content="https://danielburger.online/img/opengraph/default-social-card.jpg"
         />
