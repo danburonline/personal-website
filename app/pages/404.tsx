@@ -1,16 +1,12 @@
-import { Head, ErrorComponent } from "blitz"
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 
-export default function Page404() {
-  const statusCode = 404
-  const title = "This page could not be found"
-  return (
-    <>
-      <Head>
-        <title>
-          {statusCode}: {title}
-        </title>
-      </Head>
-      <ErrorComponent statusCode={statusCode} title={title} />
-    </>
-  )
+export default function Page404(): void | null {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.push("/")
+  }, [router])
+
+  return null
 }
