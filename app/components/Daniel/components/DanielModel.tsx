@@ -60,6 +60,7 @@ export default function DanielModel({
   // TODO Add a more compressed version of the model
   // TODO Add more interesting post-processing effects and filters
   // TODO Animate the eyes of the 3D model to blink sometimes
+  // TODO Fix the max rotation of the model
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
