@@ -3,7 +3,7 @@ import { neuroscienceList, artificialIntelligenceList, virtualRealityList } from
 
 export default function Skills() {
   return (
-    <div className="bg-gray-900">
+    <div className="pt-10 bg-gray-900">
       <div className="px-4 pt-12 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
           <h2 className="text-lg font-semibold leading-6 tracking-wider uppercase text-primary">

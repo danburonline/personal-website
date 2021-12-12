@@ -21,13 +21,13 @@ export default function Quote() {
             >
               physicalism
             </a>{" "}
-            and that we will one day be able to directly engineer our brain’s perception of reality
+            and that one day we will be able to directly engineer our brain’s perception of reality
             for the benefit of humankind.
           </h3>
         ) : (
           <h3>
             Strong background in software engineering with an eager curiosity in neuroscience,
-            virtual reality and artificial intelligence. I believe that we will one day be able to
+            virtual reality and artificial intelligence. I believe that one day we will be able to
             directly engineer our brain’s perception of reality.
           </h3>
         )}
@@ -44,8 +44,8 @@ export default function Quote() {
             />
           </div>
           <div className="ml-4 lg:ml-0">
-            <div className="text-base font-bold text-gray-900">Daniel Burger</div>
-            <div className="text-base font-medium text-gray-500">Software Engineer</div>
+            <div className="text-base font-bold text-gray-900">Daniel Burger,</div>
+            <div className="text-base font-medium text-gray-500">challenge-driven since 2014</div>
           </div>
         </div>
       </footer>

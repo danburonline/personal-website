@@ -1,6 +1,5 @@
 import {
   faGithub,
-  faResearchgate,
   faMediumM,
   faYoutube,
   faLinkedin,
@@ -13,6 +12,7 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons"
 import type { IconDefinition } from "@fortawesome/fontawesome-common-types"
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons"
 
 export type socialMediaChannelType = {
   name: string
@@ -31,11 +31,11 @@ const socialMediaChannels: socialMediaChannelType[] = [
     bgColor: "#24292e",
   },
   {
-    name: "ResearchGate",
+    name: "Academia",
     description: "Research papers and articles of all my public research projects",
-    href: "https://www.researchgate.net/profile/Daniel_Burger10",
-    icon: faResearchgate,
-    bgColor: "#82c91e",
+    href: "https://mdx.academia.edu/danburonline",
+    icon: faGraduationCap,
+    bgColor: "#0c3bc9",
   },
   {
     name: "Medium",
