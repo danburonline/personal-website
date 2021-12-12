@@ -1,3 +1,4 @@
+import { Image } from "blitz"
 import { useMediaQuery } from "react-responsive"
 
 export default function Quote() {
@@ -34,10 +35,12 @@ export default function Quote() {
       <footer className="mt-8">
         <div className="flex">
           <div className="flex-shrink-0 lg:hidden">
-            <img
+            <Image
               className="w-12 h-12 rounded-full"
               src="/img/daniel-burger.jpg"
               alt="Portrait of Daniel Burger"
+              height={"48px"}
+              width={"48px"}
             />
           </div>
           <div className="ml-4 lg:ml-0">

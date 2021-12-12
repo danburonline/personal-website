@@ -1,6 +1,7 @@
 import QuotationMarks from "./components/QuotationMarks"
 import BackgroundDecoration from "./components/BackgroundDecoration"
 import Quote from "./components/Quote"
+import { Image } from "blitz"
 
 export default function About() {
   return (
@@ -9,10 +10,12 @@ export default function About() {
         <BackgroundDecoration />
         <div className="relative lg:flex lg:items-center">
           <div className="hidden lg:block lg:flex-shrink-0">
-            <img
+            <Image
               className="w-64 h-64 rounded-full xl:h-80 xl:w-80"
               src="/img/daniel-burger.jpg"
               alt="Portrait of Daniel Burger"
+              width={"320px"}
+              height={"320px"}
             />
           </div>
 
