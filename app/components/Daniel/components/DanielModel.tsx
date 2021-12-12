@@ -2,13 +2,13 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import { useGLTF } from "@react-three/drei"
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
 import { useFrame, useThree } from "@react-three/fiber"
-import { Euler, Mesh, MeshStandardMaterial, Quaternion } from "three"
+import { Euler, Mesh, Quaternion } from "three"
 import useDeviceOrientation from "../hooks/useDeviceOrientation"
 import { animated, useSpring, config } from "@react-spring/three"
 
 type DanielModelGLTFResult = GLTF & {
   nodes: {
-    Daniel: THREE.Mesh
+    Daniel: Mesh
   }
 }
 
