@@ -36,7 +36,7 @@ export default function Quote() {
         <div className="flex">
           <div className="flex-shrink-0 lg:hidden">
             <Image
-              className="w-12 h-12 rounded-full"
+              className="w-12 h-12 rounded-full pointer-events-none"
               src="/img/daniel-burger.jpg"
               alt="Portrait of Daniel Burger"
               height={"48px"}

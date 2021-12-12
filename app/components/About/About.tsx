@@ -11,7 +11,7 @@ export default function About() {
         <div className="relative lg:flex lg:items-center">
           <div className="hidden lg:block lg:flex-shrink-0">
             <Image
-              className="w-64 h-64 rounded-full xl:h-80 xl:w-80"
+              className="w-64 h-64 rounded-full pointer-events-none xl:h-80 xl:w-80"
               src="/img/daniel-burger.jpg"
               alt="Portrait of Daniel Burger"
               width={"320px"}

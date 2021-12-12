@@ -5,6 +5,7 @@ import { config } from "@fortawesome/fontawesome-svg-core"
 import Hero from "../components/Hero"
 import About from "../components/About"
 import Navigation from "app/components/Navigation"
+import Skills from "app/components/Skills"
 
 const LazyDaniel = dynamic(() => import("../components/Daniel"), {
   ssr: false,
@@ -19,6 +20,7 @@ const Home: BlitzPage = () => {
       <Navigation />
       <Hero />
       <About />
+      <Skills />
     </>
   )
 }

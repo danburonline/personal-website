@@ -2,21 +2,13 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import { useGLTF } from "@react-three/drei"
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
 import { useFrame, useThree } from "@react-three/fiber"
-import { Euler, Mesh, Quaternion } from "three"
+import { Euler, Mesh, MeshStandardMaterial, Quaternion } from "three"
 import useDeviceOrientation from "../hooks/useDeviceOrientation"
 import { animated, useSpring, config } from "@react-spring/three"
 
 type DanielModelGLTFResult = GLTF & {
   nodes: {
-    Body: Mesh
-    Eyebrows: Mesh
-    Nose: Mesh
-    Ears: Mesh
-    Eyes: Mesh
-    Glasses: Mesh
-    Head: Mesh
-    SideHair: Mesh
-    TopHair: Mesh
+    Daniel: THREE.Mesh
   }
 }
 
@@ -63,38 +55,13 @@ export default function DanielModel({
     }
   })
 
-  // TODO Add a more compressed version of the model
   // TODO Add more interesting post-processing effects and filters
   // TODO Animate the eyes of the 3D model to blink sometimes
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
     <animated.group scale={scale} ref={danielModelRef} dispose={null}>
-      <mesh geometry={nodes.Body.geometry}>
-        <meshStandardMaterial color={propsColor} />
-      </mesh>
-      <mesh geometry={nodes.Eyebrows.geometry}>
-        <meshStandardMaterial color={propsColor} />
-      </mesh>
-      <mesh geometry={nodes.Nose.geometry}>
-        <meshStandardMaterial color={propsColor} />
-      </mesh>
-      <mesh geometry={nodes.Ears.geometry}>
-        <meshStandardMaterial color={propsColor} />
-      </mesh>
-      <mesh geometry={nodes.Eyes.geometry}>
-        <meshStandardMaterial color={propsColor} />
-      </mesh>
-      <mesh geometry={nodes.Glasses.geometry}>
-        <meshStandardMaterial color={propsColor} />
-      </mesh>
-      <mesh geometry={nodes.Head.geometry}>
-        <meshStandardMaterial color={propsColor} />
-      </mesh>
-      <mesh geometry={nodes.SideHair.geometry}>
-        <meshStandardMaterial color={propsColor} />
-      </mesh>
-      <mesh geometry={nodes.TopHair.geometry}>
+      <mesh geometry={nodes.Daniel.geometry}>
         <meshStandardMaterial color={propsColor} />
       </mesh>
     </animated.group>
