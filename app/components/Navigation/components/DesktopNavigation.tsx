@@ -82,8 +82,8 @@ export default function DesktopNavigation() {
                         >
                           <div className="flex items-center">
                             <div className="text-base font-medium text-gray-900">
-                              <span className="font-bold">Now hiring:</span> Backend software
-                              engineer
+                              <span className="font-bold">Now hiring:</span> Backend Software
+                              Engineer
                             </div>
                             <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-primary text-gray-800">
                               New

@@ -51,7 +51,13 @@ export default function DanielModel({
       danielModelRef.current.quaternion.slerp(fiberQuaternion.setFromEuler(fiberEuler), 0.1)
 
       if (rotateByDeviceOrientation) {
-        fiberEuler.set(0, gamma * 0.5 * Math.PI, 0)
+        if (gamma > 0.45 || gamma < -0.45) {
+          const newGamma = gamma > 0.45 ? 0.45 : gamma < -0.45 ? -0.45 : 0
+          fiberEuler.set(0, newGamma * 0.5 * Math.PI, 0)
+        } else if (gamma < 0.45) {
+          fiberEuler.set(0, gamma * 0.5 * Math.PI, 0)
+        }
+
         danielModelRef.current.quaternion.slerp(fiberQuaternion.setFromEuler(fiberEuler), 0.1)
       }
     }
@@ -60,7 +66,6 @@ export default function DanielModel({
   // TODO Add a more compressed version of the model
   // TODO Add more interesting post-processing effects and filters
   // TODO Animate the eyes of the 3D model to blink sometimes
-  // TODO Fix the max rotation of the model
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
