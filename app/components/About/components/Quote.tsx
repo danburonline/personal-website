@@ -8,16 +8,28 @@ export default function Quote() {
   return (
     <blockquote className="relative">
       <div className="text-2xl font-medium leading-9 text-gray-900">
-        <h3>
-          {`Strong background in software engineering with an eager curiosity in neuroscience, virtual
-        reality and artificial intelligence. I believe ${
-          !isMobileWidth
-            ? `in the concept of
-          physicalism and`
-            : ""
-        }  that we will one day be able to directly engineer our brain's
-        perception of reality${!isMobileWidth ? ` for the benefit of humankind.` : "."}`}
-        </h3>
+        {!isMobileWidth ? (
+          <h3>
+            Strong background in software engineering with an eager curiosity in neuroscience,
+            virtual reality and artificial intelligence. I believe in the concept of{" "}
+            <a
+              className="pointer-events-auto hover:underline"
+              href="https://en.wikipedia.org/wiki/Physicalism"
+              target="_blank"
+              rel="noreferrer"
+            >
+              physicalism
+            </a>{" "}
+            and that we will one day be able to directly engineer our brain’s perception of reality
+            for the benefit of humankind.
+          </h3>
+        ) : (
+          <h3>
+            Strong background in software engineering with an eager curiosity in neuroscience,
+            virtual reality and artificial intelligence. I believe that we will one day be able to
+            directly engineer our brain’s perception of reality.
+          </h3>
+        )}
       </div>
       <footer className="mt-8">
         <div className="flex">
