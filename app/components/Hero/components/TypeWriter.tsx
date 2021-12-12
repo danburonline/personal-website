@@ -9,10 +9,10 @@ export default function TypeWriter() {
         cursorColor="#FFE000"
         multiText={[
           "software engineer",
-          "web developer",
-          "interface designer",
           "neurotech engineer",
+          "web developer",
           "game developer",
+          "interface designer",
           "media designer",
         ]}
         typeSpeed={100}
