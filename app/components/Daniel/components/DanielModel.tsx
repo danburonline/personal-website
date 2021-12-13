@@ -56,7 +56,6 @@ export default function DanielModel({
   })
 
   // TODO Add more interesting post-processing effects and filters
-  // TODO Animate the eyes of the 3D model to blink sometimes
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
