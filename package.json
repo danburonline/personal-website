@@ -34,6 +34,7 @@
     "react-dom": "18.0.0-alpha-5ca4b0433-20211020",
     "react-responsive": "9.0.0-beta.5",
     "react-typewriter-effect": "1.1.0",
+    "react-waypoint": "10.1.0",
     "sharp": "0.29.3",
     "tailwindcss": "2.x",
     "three": "0.134.0",
