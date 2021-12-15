@@ -4,10 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import classNames from "../../../utils/classNames"
 import socialMediaChannels from "../data/socialMediaChannels"
+import { motion } from "framer-motion"
 
 export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: boolean) => void }) {
   return (
-    <div className="items-center justify-between hidden px-4 py-6 md:flex">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeInOut" }}
+      className="items-center justify-between hidden px-4 py-6 md:flex"
+    >
       <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
         <Popover.Group as="nav" className="flex ml-4 space-x-10">
           <Popover className="relative">
@@ -84,6 +90,6 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
           </Popover>
         </Popover.Group>
       </div>
-    </div>
+    </motion.div>
   )
 }

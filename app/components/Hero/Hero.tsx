@@ -3,6 +3,7 @@ import { faEnvelope, faCalendar } from "@fortawesome/free-solid-svg-icons"
 import { dynamic } from "blitz"
 import { useMediaQuery } from "react-responsive"
 import HeroDecorations from "./components/HeroDecorations"
+import { motion } from "framer-motion"
 
 const TypeWriter = dynamic(() => import("./components/TypeWriter"), {
   ssr: false,
@@ -48,7 +49,11 @@ export default function Hero() {
             </h2>
 
             <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
-              <div className="rounded-md shadow pointer-events-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="rounded-md shadow pointer-events-auto"
+              >
                 <a
                   href="mailto:public@danielburger.online"
                   className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-gray-800 transition-colors border border-transparent rounded-md bg-primary hover:bg-primaryDark md:py-4 md:text-lg md:px-10"
@@ -56,8 +61,13 @@ export default function Hero() {
                   <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
                   Contact me
                 </a>
-              </div>
-              <div className="mt-3 rounded-md shadow pointer-events-auto sm:mt-0 sm:ml-3">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.05 }}
+                className="mt-3 rounded-md shadow pointer-events-auto sm:mt-0 sm:ml-3"
+              >
                 <a
                   href="https://calendly.com/danburonline/meet"
                   target="_blank"
@@ -67,7 +77,7 @@ export default function Hero() {
                   <FontAwesomeIcon icon={faCalendar} className="mr-3" />
                   Book a meeting
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </main>
