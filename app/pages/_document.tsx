@@ -46,6 +46,7 @@ class CustomDocument extends Document {
 
         body {
           height: 100vh;
+          width: 100vw;
           max-height: -webkit-fill-available;
           overflow-y: scroll;
           overflow-x: hidden;

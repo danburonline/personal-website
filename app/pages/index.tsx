@@ -11,7 +11,7 @@ const LazyDaniel = dynamic(() => import("../components/Daniel"), {
   ssr: false,
 })
 
-// TODO Add initial animations for the Hero component
+// TODO Add initial animations for the Hero components
 
 const Home: BlitzPage = () => {
   return (
