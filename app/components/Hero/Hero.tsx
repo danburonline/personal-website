@@ -14,7 +14,7 @@ export default function Hero() {
   })
 
   return (
-    <div className="relative z-20 flex items-center justify-center w-screen h-screen overflow-hidden pointer-events-none min-h-small">
+    <div className="relative z-20 flex items-center justify-center w-full h-screen overflow-hidden pointer-events-none min-h-small">
       <HeroDecorations />
       <div className="relative pt-6 pb-16 sm:pb-24">
         <main className="px-6 mx-auto mt-16 max-w-7xl sm:mt-24">

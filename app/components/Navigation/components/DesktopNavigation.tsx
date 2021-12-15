@@ -47,7 +47,7 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute z-10 w-screen max-w-md mt-3 -ml-4 transform lg:max-w-3xl">
-                      <div className="overflow-scroll rounded-lg shadow-lg h-full sm:h-[80vh] ring-1 ring-black ring-opacity-5">
+                      <div className="h-full overflow-y-auto rounded-lg shadow-lg sm:max-h-[80vh] ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8 lg:grid-cols-2">
                           {socialMediaChannels.map((item) => (
                             <a
@@ -74,28 +74,6 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
                               </div>
                             </a>
                           ))}
-                        </div>
-                        <div className="p-5 rounded-b-lg bg-gray-50 sm:p-8">
-                          <a
-                            href="https://www.linkedin.com/posts/danburonline_backend-software-engineer-iot-job-opening-activity-6868611198162755585-fzHp"
-                            target="_blank"
-                            className="flow-root p-3 -m-3 rounded-md hover:bg-gray-100"
-                            rel="noreferrer"
-                          >
-                            <div className="flex items-center">
-                              <div className="text-base font-medium text-gray-900">
-                                <span className="font-bold">Now hiring:</span> Backend Software
-                                Engineer
-                              </div>
-                              <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-primary text-gray-800">
-                                New
-                              </span>
-                            </div>
-                            <p className="mt-1 text-sm text-gray-500">
-                              Looking for a talented backend software engineer to join my team at
-                              IDUN →
-                            </p>
-                          </a>
                         </div>
                       </div>
                     </Popover.Panel>
