@@ -20,12 +20,22 @@ export default function Hero() {
       <div className="relative pt-6 pb-16 sm:pb-24">
         <main className="px-6 mx-auto mt-16 max-w-7xl sm:mt-24">
           <div className="text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+            <motion.h1
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.05 }}
+              className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl"
+            >
               <span className="block">Daniel Burger</span>
               <TypeWriter />
-            </h1>
+            </motion.h1>
 
-            <h2 className="mx-auto mt-3 text-base text-gray-300 md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl">
+            <motion.h2
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.05 }}
+              className="mx-auto mt-3 text-base text-gray-300 md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl"
+            >
               Building brain-machine interface software at{" "}
               <a
                 href="https://iduntechnologies.ch"
@@ -46,7 +56,7 @@ export default function Hero() {
                 Middlesex University
               </a>
               {isMobileWidth ? null : ", London"}.
-            </h2>
+            </motion.h2>
 
             <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
               <motion.div

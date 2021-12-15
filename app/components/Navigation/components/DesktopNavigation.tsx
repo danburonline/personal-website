@@ -40,7 +40,7 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
                     </div>
                   </Popover.Button>
                   <Popover.Overlay
-                    className={`${open ? "opacity-30 fixed inset-0" : "opacity-0"} bg-black`}
+                    className={`${open ? "opacity-50 fixed inset-0" : "opacity-0"} bg-black`}
                   />
 
                   <Transition
