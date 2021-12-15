@@ -55,7 +55,7 @@ export default function DanielModel({
     }
   })
 
-  // TODO Add more interesting post-processing effects and filters
+  // TODO Add more interesting post-processing effects/filters and more interesting lighting/materials
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (

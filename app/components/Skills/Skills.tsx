@@ -1,4 +1,5 @@
-import { CheckIcon } from "@heroicons/react/outline"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { neuroscienceList, artificialIntelligenceList, virtualRealityList } from "./data/skillLists"
 
 export default function Skills() {
@@ -33,7 +34,8 @@ export default function Skills() {
                         {neuroscienceList.map((feature) => (
                           <li key={feature} className="flex items-start">
                             <div className="flex-shrink-0">
-                              <CheckIcon
+                              <FontAwesomeIcon
+                                icon={faCheck}
                                 className="flex-shrink-0 w-6 h-6 text-green-500"
                                 aria-hidden="true"
                               />
@@ -58,7 +60,8 @@ export default function Skills() {
                       {virtualRealityList.map((feature) => (
                         <li key={feature} className="flex items-start">
                           <div className="flex-shrink-0">
-                            <CheckIcon
+                            <FontAwesomeIcon
+                              icon={faCheck}
                               className="flex-shrink-0 w-6 h-6 text-green-500"
                               aria-hidden="true"
                             />
@@ -79,7 +82,8 @@ export default function Skills() {
                         {artificialIntelligenceList.map((feature) => (
                           <li key={feature} className="flex items-start">
                             <div className="flex-shrink-0">
-                              <CheckIcon
+                              <FontAwesomeIcon
+                                icon={faCheck}
                                 className="flex-shrink-0 w-6 h-6 text-green-500"
                                 aria-hidden="true"
                               />
