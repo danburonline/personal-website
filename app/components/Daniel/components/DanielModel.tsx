@@ -56,6 +56,7 @@ export default function DanielModel({
   })
 
   // TODO Add more interesting post-processing effects/filters and more interesting lighting/materials
+  // TODO Add a custom cursor that changes the color of the model based (disable on mobile)
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (

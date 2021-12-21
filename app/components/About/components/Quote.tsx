@@ -1,36 +1,17 @@
 import { Image } from "blitz"
-import { useMediaQuery } from "react-responsive"
 
 export default function Quote() {
-  const isMobileWidth = useMediaQuery({
-    query: "(max-width: 639px)",
-  })
-
   return (
     <blockquote className="relative">
       <div className="text-2xl font-medium leading-9 text-gray-900">
-        {!isMobileWidth ? (
-          <h3>
-            Strong background in software engineering with an eager curiosity in neuroscience,
-            virtual reality and artificial intelligence. I believe in the concept of{" "}
-            <a
-              className="pointer-events-auto hover:underline"
-              href="https://en.wikipedia.org/wiki/Physicalism"
-              target="_blank"
-              rel="noreferrer"
-            >
-              physicalism
-            </a>{" "}
-            and that one day we will be able to directly engineer our brain’s perception of reality
-            for the benefit of humankind.
-          </h3>
-        ) : (
-          <h3>
-            Strong background in software engineering with an eager curiosity in neuroscience,
-            virtual reality and artificial intelligence. I believe that one day we will be able to
-            directly engineer our brain’s perception of reality.
-          </h3>
-        )}
+        <h3>
+          <span className="font-bold">
+            Grüezi, I am a software engineer specializing in neural interfaces and virtual reality.
+          </span>{" "}
+          I’m fascinated by artificial intelligence and neuroscience, and I believe that one day
+          we’ll be able to directly engineer our brains’ perception of reality for the benefit of
+          humanity.
+        </h3>
       </div>
       <footer className="mt-8">
         <div className="flex">
@@ -44,8 +25,8 @@ export default function Quote() {
             />
           </div>
           <div className="ml-4 lg:ml-0">
-            <div className="text-base font-bold text-gray-900">Daniel Burger,</div>
-            <div className="text-base font-medium text-gray-500">challenge-driven since 2014</div>
+            <div className="text-base font-bold text-gray-900">Daniel Burger</div>
+            <div className="text-base font-medium text-gray-500">Living in Switzerland</div>
           </div>
         </div>
       </footer>

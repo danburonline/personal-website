@@ -6,7 +6,7 @@ class CustomDocument extends Document {
       <Html lang="en" className="bg-gray-900">
         <DocumentHead />
         {/* TODO Create a better social card image as soon as I finish the hero 3D model part */}
-        <title>Daniel Burger — Software Engineer</title>
+        <title>Daniel Burger</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Daniel Burger" />
         <meta name="theme-color" content="#111827" />
