@@ -8,9 +8,7 @@ Complete source code of my personal website utilising the alpha version of Blitz
 
 ## Prerequisites
 
-- [TypeScript](https://www.typescriptlang.org): `v3.9.7`
 - [Node.js](https://nodejs.org): `v16.10.0`
-- [Blitz.js](https://blitzjs.com): `v0.43.0`
 - [Yarn](https://yarnpkg.com): `v1.22.11`
 - [Git](https://git-scm.com): `v2.22.0`
 
