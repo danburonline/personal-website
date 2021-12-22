@@ -12,15 +12,31 @@ type BrainGLTFResult = GLTF & {
   }
 }
 
+// TODO Get a non low-poly version of the brain model
+
 export default function Brain(props: JSX.IntrinsicElements["group"]) {
   const { nodes } = useGLTF("./models/brain-transformed.glb") as unknown as BrainGLTFResult
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.Mesh.geometry} />
-      <mesh geometry={nodes.Mesh_1.geometry} />
-      <mesh geometry={nodes.Mesh_2.geometry} />
-      <mesh geometry={nodes.Mesh_3.geometry} />
-      <mesh geometry={nodes.Mesh_4.geometry} />
+    <group {...props} dispose={null} position={[0.14, -1.8, 0]} scale={0.425}>
+      <ambientLight intensity={0.1} />
+      <fog attach="fog" args={["#202020", 1, 10]} />
+      <directionalLight color="white" position={[0, 10, 0]} intensity={1} />
+      <directionalLight color="white" position={[-1, -10, 0]} intensity={1} />
+      <mesh geometry={nodes.Mesh.geometry}>
+        <meshStandardMaterial attach="material" color="#f1b69b" />
+      </mesh>
+      <mesh geometry={nodes.Mesh_1.geometry}>
+        <meshStandardMaterial attach="material" color="#f1b69b" />
+      </mesh>
+      <mesh geometry={nodes.Mesh_2.geometry}>
+        <meshStandardMaterial attach="material" color="#f1b69b" />
+      </mesh>
+      <mesh geometry={nodes.Mesh_3.geometry}>
+        <meshStandardMaterial attach="material" color="#f1b69b" />
+      </mesh>
+      <mesh geometry={nodes.Mesh_4.geometry}>
+        <meshStandardMaterial attach="material" color="#f1b69b" />
+      </mesh>
     </group>
   )
 }

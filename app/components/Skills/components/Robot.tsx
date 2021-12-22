@@ -19,12 +19,18 @@ type RobotGLTFResult = GLTF & {
   }
 }
 
+// TODO Only use the head of the robot
+
 export default function Robot(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF(
-    ".models/robot-transformed.glb"
+    "./models/robot-transformed.glb"
   ) as unknown as RobotGLTFResult
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position={[0, -2.25, 0]} scale={2.1}>
+      <ambientLight intensity={0.1} />
+      <fog attach="fog" args={["#202020", 1, 10]} />
+      <directionalLight color="white" position={[2, 5, 0]} intensity={1} />
+      <directionalLight color="white" position={[-2, -5, 5]} intensity={1} />
       <mesh geometry={nodes.Mesh.geometry} material={materials.Material_1} />
       <mesh geometry={nodes.Mesh_1.geometry} material={materials.Material_2} />
       <mesh geometry={nodes.Mesh_2.geometry} material={materials.Material_3} />
