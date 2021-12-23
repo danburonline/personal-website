@@ -6,7 +6,7 @@ export default function Quote() {
       <div className="text-2xl font-medium leading-9 text-gray-900">
         <h3>
           <span className="font-bold">
-            Grüezi, I am a software engineer specializing in neural interfaces and virtual reality.
+            Grüezi, I’m a software engineer specializing in neural interfaces and virtual reality.
           </span>{" "}
           I’m fascinated by artificial intelligence and neuroscience, and I believe that one day
           we’ll be able to directly engineer our brains’ perception of reality for the benefit of
