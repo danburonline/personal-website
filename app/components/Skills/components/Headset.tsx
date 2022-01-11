@@ -20,8 +20,6 @@ const bottleMaterial = new THREE.MeshPhysicalMaterial({
   envMapIntensity: 4,
 })
 
-// TODO Adjust the center of the headset model
-
 export default function Headset(props: JSX.IntrinsicElements["group"]) {
   const { nodes } = useGLTF("./models/headset-transformed.glb") as unknown as HeadsetGLTFResult
   return (

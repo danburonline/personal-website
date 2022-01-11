@@ -19,8 +19,6 @@ type RobotGLTFResult = GLTF & {
   }
 }
 
-// TODO Only use the head of the robot
-
 export default function Robot(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF(
     "./models/robot-transformed.glb"

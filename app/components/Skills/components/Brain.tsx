@@ -12,8 +12,6 @@ type BrainGLTFResult = GLTF & {
   }
 }
 
-// TODO Get a non low-poly version of the brain model
-
 export default function Brain(props: JSX.IntrinsicElements["group"]) {
   const { nodes } = useGLTF("./models/brain-transformed.glb") as unknown as BrainGLTFResult
   return (

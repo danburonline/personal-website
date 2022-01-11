@@ -9,8 +9,7 @@ import Robot from "./components/Robot"
 import { Environment, OrbitControls } from "@react-three/drei"
 import { Suspense } from "react"
 
-// TODO Break up component into subcomponents
-// TODO Add viewport onEnter animation for 3D models
+// TODO Add different component (see draft in Figma)
 
 export default function Skills() {
   return (
