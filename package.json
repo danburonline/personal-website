@@ -35,7 +35,7 @@
     "react-typewriter-effect": "1.1.0",
     "sharp": "0.29.3",
     "tailwindcss": "2.x",
-    "three": "0.134.0",
+    "three": "0.137.0",
     "typewriter-effect": "2.18.2"
   },
   "devDependencies": {
