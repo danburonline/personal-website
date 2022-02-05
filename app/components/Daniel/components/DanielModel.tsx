@@ -55,8 +55,6 @@ export default function DanielModel({
     }
   })
 
-  // TODO Add Ready Player Me 3D character with animations
-
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
     <animated.group scale={scale} ref={danielModelRef} dispose={null}>

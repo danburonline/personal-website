@@ -14,8 +14,6 @@ export default function Hero() {
     query: "(max-width: 639px)",
   })
 
-  // TODO Align the text on the right as soon as I have the new Ready Player Me 3D model
-
   return (
     <div className="relative z-20 flex items-center justify-center w-full h-screen overflow-hidden pointer-events-none min-h-small">
       <HeroDecorations />

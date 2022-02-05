@@ -5,7 +5,6 @@ class CustomDocument extends Document {
     return (
       <Html lang="en" className="bg-gray-900">
         <DocumentHead />
-        {/* TODO Create a better social card image as soon as I finish the hero 3D model part */}
         <title>Daniel Burger</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Daniel Burger" />
@@ -16,7 +15,6 @@ class CustomDocument extends Document {
           name="description"
           content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
         />
-        {/* TODO Add Hotjar tracking */}
         <meta property="og:title" content="Daniel Burger — Software Engineer" />
         <meta property="og:site_name" content="Daniel Burger" />
         <meta property="og:url" content="https://danielburger.online" />
