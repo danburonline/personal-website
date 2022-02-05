@@ -26,7 +26,7 @@ export default function Quote() {
           </div>
           <div className="ml-4 lg:ml-0">
             <div className="text-base font-bold text-gray-900">Daniel Burger</div>
-            <div className="text-base font-medium text-gray-500">Based in Switzerland</div>
+            <div className="text-base font-medium text-gray-500">Living in Switzerland</div>
           </div>
         </div>
       </footer>

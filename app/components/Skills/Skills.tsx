@@ -24,7 +24,7 @@ export default function Skills() {
         <div className="relative">
           <div className="absolute inset-0 bg-gray-900 h-3/4" />
           <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
+            <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 md:grid-cols-1 lg:gap-5 lg:space-y-0">
               {skillsList.map((skill) => (
                 <div
                   key={skill.skillTitle}
@@ -71,7 +71,7 @@ export default function Skills() {
                 </div>
                 <div className="mt-4 text-lg text-gray-700">
                   <span className="font-bold">
-                    After a few years as an interactive media designer in the industry, I moved into
+                    After a few years as an interaction designer in the industry, I moved into
                     software engineering and later into neurotech.
                   </span>{" "}
                   When working on brain-machine interface software, I believe it’s advantageous to

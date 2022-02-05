@@ -23,8 +23,8 @@ export default function Hero() {
         <main className="px-6 mx-auto mt-16 max-w-7xl sm:mt-24">
           <div className="text-center">
             <motion.h1
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ delay: 0.05 }}
               className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl"
             >
@@ -62,8 +62,9 @@ export default function Hero() {
 
             <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.05 }}
                 className="rounded-md shadow pointer-events-auto"
               >
                 <a
@@ -75,8 +76,8 @@ export default function Hero() {
                 </a>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ delay: 0.05 }}
                 className="mt-3 rounded-md shadow pointer-events-auto sm:mt-0 sm:ml-3"
               >
