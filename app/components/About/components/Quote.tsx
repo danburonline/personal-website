@@ -1,13 +1,18 @@
 import { Image } from "blitz"
+import { useMediaQuery } from "react-responsive"
 
 export default function Quote() {
+  const isMobileWidth = useMediaQuery({
+    query: "(max-width: 639px)",
+  })
+
   return (
     <blockquote className="relative">
       <div className="text-2xl font-medium leading-9 text-gray-900">
         <h3>
           <span className="font-bold">
-            Grüezi, I’m a software engineer specializing in non-invasive neural interfaces and
-            web-based virtual reality.
+            Grüezi, I’m a software engineer specializing in {!isMobileWidth && "non-invasive"}{" "}
+            neural interfaces and {!isMobileWidth && "web-based"} virtual reality.
           </span>{" "}
           I’m fascinated by machine learning and neuroscience, and I believe that one day we’ll be
           able to directly engineer our brains’ perception of reality for the benefit of humanity.

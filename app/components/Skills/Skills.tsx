@@ -64,7 +64,7 @@ export default function Skills() {
           </div>
         </div>
         <div className="relative px-4 mx-auto mt-4 max-w-7xl sm:px-6 lg:px-8 lg:mt-5">
-          <div className="max-w-md mx-auto lg:max-w-5xl">
+          <div className="max-w-md mx-auto md:max-w-5xl">
             <div className="px-6 py-8 bg-gray-100 rounded-lg sm:p-10 lg:flex lg:items-center">
               <div className="flex-1">
                 <div>
