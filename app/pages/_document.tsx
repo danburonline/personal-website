@@ -6,7 +6,7 @@ class CustomDocument extends Document {
       <Html lang="en" className="bg-gray-900">
         <DocumentHead />
         {/* TODO Create a better social card image as soon as I finish the hero 3D model part */}
-        <title>Daniel Burger — Software Engineer</title>
+        <title>Daniel Burger</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Daniel Burger" />
         <meta name="theme-color" content="#111827" />
@@ -16,7 +16,7 @@ class CustomDocument extends Document {
           name="description"
           content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
         />
-
+        {/* TODO Add Hotjar tracking */}
         <meta property="og:title" content="Daniel Burger — Software Engineer" />
         <meta property="og:site_name" content="Daniel Burger" />
         <meta property="og:url" content="https://danielburger.online" />
@@ -26,10 +26,8 @@ class CustomDocument extends Document {
           property="og:description"
           content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background."
         />
-
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@danburonline" />
-
         <style>{`
         ::-moz-selection {
           background: #FFE000;
@@ -46,7 +44,10 @@ class CustomDocument extends Document {
 
         body {
           height: 100vh;
+          width: 100vw;
           max-height: -webkit-fill-available;
+          overflow-y: scroll;
+          overflow-x: hidden;
         }
         html {
           height: -webkit-fill-available;

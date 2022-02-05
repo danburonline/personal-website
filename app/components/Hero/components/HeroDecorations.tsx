@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 export default function HeroDecorations() {
   return (
     <div
@@ -5,7 +7,10 @@ export default function HeroDecorations() {
       aria-hidden="true"
     >
       <div className="relative h-full mx-auto max-w-7xl">
-        <svg
+        <motion.svg
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.75, ease: "easeInOut" }}
           className="absolute transform right-full translate-y-1/4 translate-x-1/4 lg:translate-x-1/2"
           width={404}
           height={784}
@@ -32,8 +37,11 @@ export default function HeroDecorations() {
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
-        </svg>
-        <svg
+        </motion.svg>
+        <motion.svg
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.75, ease: "easeInOut" }}
           className="absolute transform left-full -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
           width={404}
           height={784}
@@ -60,7 +68,7 @@ export default function HeroDecorations() {
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
-        </svg>
+        </motion.svg>
       </div>
     </div>
   )

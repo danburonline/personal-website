@@ -16,8 +16,8 @@ export default function Daniel() {
   const supportsDeviceOrientation = useSupportsDeviceOrientation()
 
   return (
-    <div className="absolute w-screen h-full overflow-hidden bg-gray-900 z-5">
-      <div className="absolute z-10 w-screen h-full bg-gray-900 pointer-events-none bg-opacity-60"></div>
+    <div className="absolute w-full h-full overflow-hidden bg-gray-900 z-5">
+      <div className="absolute z-10 w-full h-full bg-gray-900 pointer-events-none bg-opacity-60"></div>
       <Canvas>
         <ambientLight intensity={0.02} />
         <fog attach="fog" args={["#202020", 1, 10]} />
