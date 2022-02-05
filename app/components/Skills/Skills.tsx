@@ -1,32 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-
-const tiers = [
-  {
-    name: "Standard",
-    href: "#",
-    priceMonthly: 49,
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    features: [
-      "Pariatur quod similique",
-      "Sapiente libero doloribus modi nostrum",
-      "Vel ipsa esse repudiandae excepturi",
-      "Itaque cupiditate adipisci quibusdam",
-    ],
-  },
-  {
-    name: "Enterprise",
-    href: "#",
-    priceMonthly: 79,
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    features: [
-      "Pariatur quod similique",
-      "Sapiente libero doloribus modi nostrum",
-      "Vel ipsa esse repudiandae excepturi",
-      "Itaque cupiditate adipisci quibusdam",
-    ],
-  },
-]
+import skillsList from "./data/skillsList"
 
 export default function Skills() {
   return (
@@ -52,7 +26,7 @@ export default function Skills() {
           <div className="absolute inset-0 bg-gray-900 h-3/4" />
           <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
-              {tiers.map((tier) => (
+              {skillsList.map((tier) => (
                 <div key={tier.name} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
                   <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                     <div>
