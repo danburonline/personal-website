@@ -6,7 +6,8 @@ export default function Quote() {
       <div className="text-2xl font-medium leading-9 text-gray-900">
         <h3>
           <span className="font-bold">
-            Grüezi, I’m a software engineer specializing in neural interfaces and virtual reality.
+            Grüezi, I’m a software engineer specializing in non-invasive neural interfaces and
+            web-based virtual reality.
           </span>{" "}
           I’m fascinated by artificial intelligence and neuroscience, and I believe that one day
           we’ll be able to directly engineer our brains’ perception of reality for the benefit of
@@ -26,7 +27,7 @@ export default function Quote() {
           </div>
           <div className="ml-4 lg:ml-0">
             <div className="text-base font-bold text-gray-900">Daniel Burger</div>
-            <div className="text-base font-medium text-gray-500">From Switzerland</div>
+            <div className="text-base font-medium text-gray-500">Based in Switzerland</div>
           </div>
         </div>
       </footer>
