@@ -9,9 +9,8 @@ export default function Quote() {
             Grüezi, I’m a software engineer specializing in non-invasive neural interfaces and
             web-based virtual reality.
           </span>{" "}
-          I’m fascinated by artificial intelligence and neuroscience, and I believe that one day
-          we’ll be able to directly engineer our brains’ perception of reality for the benefit of
-          humanity.
+          I’m fascinated by machine learning and neuroscience, and I believe that one day we’ll be
+          able to directly engineer our brains’ perception of reality for the benefit of humanity.
         </h3>
       </div>
       <footer className="mt-8">

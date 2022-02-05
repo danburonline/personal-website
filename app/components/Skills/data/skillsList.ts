@@ -1,8 +1,6 @@
 const skillsList = [
   {
-    name: "Standard",
-    href: "#",
-    priceMonthly: 49,
+    skillTitle: "Neuro",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     features: [
       "Pariatur quod similique",
@@ -12,9 +10,7 @@ const skillsList = [
     ],
   },
   {
-    name: "Enterprise",
-    href: "#",
-    priceMonthly: 79,
+    skillTitle: "Tech",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     features: [
       "Pariatur quod similique",

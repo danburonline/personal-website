@@ -46,7 +46,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "Behance",
-    description: "Work portfolio about all projects related to interaction design.",
+    description: "Work portfolio about all public projects related to interaction design.",
     href: "https://www.behance.net/danburonline",
     icon: faBehance,
     bgColor: "#0057ff",

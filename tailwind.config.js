@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         primary: "#FFE000",
         primaryDark: "#FFD000",
+        primaryLight: "#FFE989",
       },
       height: {
         small: "350px",
