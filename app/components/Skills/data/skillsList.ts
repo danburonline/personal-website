@@ -1,6 +1,6 @@
 const skillsList = [
   {
-    skillTitle: "Neuro",
+    skillTitle: "Neurotech",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     features: [
       "Pariatur quod similique",
@@ -10,7 +10,7 @@ const skillsList = [
     ],
   },
   {
-    skillTitle: "Tech",
+    skillTitle: "Software",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     features: [
       "Pariatur quod similique",

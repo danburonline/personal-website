@@ -1,8 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck, faHeart } from "@fortawesome/free-solid-svg-icons"
 import skillsList from "./data/skillsList"
+import { useMediaQuery } from "react-responsive"
 
 export default function Skills() {
+  const isMobileWidth = useMediaQuery({
+    query: "(max-width: 639px)",
+  })
+
   return (
     <div className="bg-gray-900">
       <div className="pt-12 sm:pt-16 lg:pt-24">
@@ -12,10 +17,11 @@ export default function Skills() {
               My Expertise
             </h2>
             <p className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-              Full-Stack Software for the Brain
+              {!isMobileWidth && "Full-Stack"} Software for the Brain
             </p>
             <p className="text-xl text-gray-300">
-              Production-grade and highly scalable with a focus on real-time and web tech
+              Production-grade and {!isMobileWidth && "highly scalable"} with a focus on real-time
+              and web tech
             </p>
           </div>
         </div>
@@ -24,14 +30,14 @@ export default function Skills() {
         <div className="relative">
           <div className="absolute inset-0 bg-gray-900 h-3/4" />
           <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 md:grid-cols-1 lg:gap-5 lg:space-y-0">
+            <div className="max-w-md mx-auto space-y-4 md:max-w-5xl md:grid md:grid-cols-2 md:gap-5 md:space-y-0">
               {skillsList.map((skill) => (
                 <div
                   key={skill.skillTitle}
                   className="flex flex-col overflow-hidden rounded-lg shadow-lg"
                 >
                   <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
-                    <div className="flex items-baseline mt-4 text-6xl font-extrabold">
+                    <div className="flex items-baseline mt-4 text-4xl font-extrabold lg:text-5xl">
                       {skill.skillTitle}
                     </div>
                     <p className="mt-5 text-lg text-gray-500">{skill.description}</p>
