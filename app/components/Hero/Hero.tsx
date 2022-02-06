@@ -38,7 +38,7 @@ export default function Hero() {
             >
               Building brain-machine interface software at{" "}
               <a
-                href="https://iduntechnologies.ch"
+                href="https://iduntechnologies.com"
                 target="_blank"
                 rel="noreferrer"
                 className="pointer-events-auto hover:underline"
