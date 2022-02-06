@@ -5,16 +5,6 @@ class CustomDocument extends Document {
     return (
       <Html lang="en" className="bg-gray-900">
         <DocumentHead />
-        <title>Daniel Burger — Software Engineer</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="author" content="Daniel Burger" />
-        <meta name="theme-color" content="#111827" />
-        <link rel="canonical" href="https://danielburger.online" />
-        <meta name="robots" content="index, follow" />
-        <meta
-          name="description"
-          content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
-        />
         <meta property="og:title" content="Daniel Burger — Software Engineer" />
         <meta property="og:site_name" content="Daniel Burger" />
         <meta property="og:url" content="https://danielburger.online" />
@@ -23,6 +13,15 @@ class CustomDocument extends Document {
         <meta
           property="og:description"
           content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background."
+        />
+        <title>Daniel Burger — Software Engineer</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="author" content="Daniel Burger" />
+        <meta name="theme-color" content="#111827" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="description"
+          content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-machine interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@danburonline" />
