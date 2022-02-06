@@ -72,7 +72,7 @@ export default function Skills() {
                     <span className="mr-2 align-baseline">
                       <FontAwesomeIcon className="text-red-500" icon={faHeart} />
                     </span>
-                    Design-driven mindset
+                    Design-driven background
                   </h3>
                 </div>
                 <div className="mt-4 text-lg text-gray-700">
