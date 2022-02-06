@@ -6,7 +6,8 @@
     "build": "blitz build",
     "start": "blitz start -p 8080",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write ."
   },
   "prettier": {
     "semi": false,
@@ -41,6 +42,7 @@
     "typewriter-effect": "2.18.2"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/react": "17.0.36",
     "@types/three": "0.134.0",
     "eslint": "7.32.0",

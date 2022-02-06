@@ -1,8 +1,8 @@
-import { Fragment } from "react"
-import { Popover, Transition } from "@headlessui/react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
 import socialMediaChannels from "../data/socialMediaChannels"
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Popover, Transition } from "@headlessui/react"
+import { Fragment } from "react"
 
 export default function MobileNavigation(props: { adjustBodyScroll: (arg0: boolean) => void }) {
   return (

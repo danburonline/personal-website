@@ -1,3 +1,4 @@
+import type { IconDefinition } from "@fortawesome/fontawesome-common-types"
 import {
   faGithub,
   faMediumM,
@@ -11,7 +12,6 @@ import {
   faTiktok,
   faDribbble,
 } from "@fortawesome/free-brands-svg-icons"
-import type { IconDefinition } from "@fortawesome/fontawesome-common-types"
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons"
 
 export type socialMediaChannelType = {

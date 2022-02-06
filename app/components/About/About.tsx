@@ -1,5 +1,5 @@
-import QuotationMarks from "./components/QuotationMarks"
 import BackgroundDecoration from "./components/BackgroundDecoration"
+import QuotationMarks from "./components/QuotationMarks"
 import Quote from "./components/Quote"
 import { Image } from "blitz"
 

@@ -1,6 +1,6 @@
-import { Popover } from "@headlessui/react"
 import DesktopNavigation from "./components/DesktopNavigation"
 import MobileNavigation from "./components/MobileNavigation"
+import { Popover } from "@headlessui/react"
 
 export default function Navigation() {
   function adjustBodyScroll(scroll: any) {

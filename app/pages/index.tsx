@@ -1,10 +1,11 @@
-import { BlitzPage, dynamic } from "blitz"
-import { config } from "@fortawesome/fontawesome-svg-core"
-import "@fortawesome/fontawesome-svg-core/styles.css"
-import Hero from "../components/Hero"
 import About from "../components/About"
+import Hero from "../components/Hero"
 import Navigation from "../components/Navigation"
 import Skills from "../components/Skills"
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+import { BlitzPage, dynamic } from "blitz"
+
 // import { Waypoint } from "react-waypoint"
 // import { useState } from "react"
 

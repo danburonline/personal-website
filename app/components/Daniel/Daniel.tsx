@@ -1,8 +1,8 @@
-import React, { Suspense } from "react"
-import { Canvas } from "@react-three/fiber"
-import { useMediaQuery } from "react-responsive"
-import DanielModel from "./components/DanielModel"
 import useSupportsDeviceOrientation from "../../hooks/useSupportsDeviceOrientation"
+import DanielModel from "./components/DanielModel"
+import { Canvas } from "@react-three/fiber"
+import React, { Suspense } from "react"
+import { useMediaQuery } from "react-responsive"
 
 export default function Daniel() {
   const isTabletWidth = useMediaQuery({

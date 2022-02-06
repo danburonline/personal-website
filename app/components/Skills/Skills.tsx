@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck, faHeart } from "@fortawesome/free-solid-svg-icons"
 import skillsList from "./data/skillsList"
+import { faCheck, faHeart } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useMediaQuery } from "react-responsive"
 
 export default function Skills() {

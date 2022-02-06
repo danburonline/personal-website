@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faCalendar, faSortDown } from "@fortawesome/free-solid-svg-icons"
-import { dynamic } from "blitz"
-import { useMediaQuery } from "react-responsive"
 import HeroDecorations from "./components/HeroDecorations"
+import { faEnvelope, faCalendar, faSortDown } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { dynamic } from "blitz"
 import { motion } from "framer-motion"
+import { useMediaQuery } from "react-responsive"
 
 const TypeWriter = dynamic(() => import("./components/TypeWriter"), {
   ssr: false,

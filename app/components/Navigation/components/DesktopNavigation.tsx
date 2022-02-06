@@ -1,10 +1,10 @@
-import { Fragment } from "react"
-import { Popover, Transition } from "@headlessui/react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import classNames from "../../../utils/classNames"
 import socialMediaChannels from "../data/socialMediaChannels"
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Popover, Transition } from "@headlessui/react"
 import { motion } from "framer-motion"
+import { Fragment } from "react"
 
 export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: boolean) => void }) {
   return (
