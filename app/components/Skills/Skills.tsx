@@ -77,7 +77,7 @@ export default function Skills() {
                 </div>
                 <div className="mt-4 text-lg text-gray-700">
                   <span className="font-bold">
-                    After a few years as an interaction designer in the industry, I moved into
+                    After a few years as an interactive media designer in the industry, I moved into
                     software engineering and later into neurotech.
                   </span>{" "}
                   When working on brain-machine interface software, I believe it’s advantageous to

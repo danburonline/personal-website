@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faCalendar } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faCalendar, faSortDown } from "@fortawesome/free-solid-svg-icons"
 import { dynamic } from "blitz"
 import { useMediaQuery } from "react-responsive"
 import HeroDecorations from "./components/HeroDecorations"
@@ -93,6 +93,20 @@ export default function Hero() {
           </div>
         </main>
       </div>
+      <motion.div
+        initial={{ translateY: 0, opacity: 0 }}
+        animate={{ translateY: -20, opacity: 0.25 }}
+        transition={{
+          repeat: Infinity,
+          repeatDelay: 0.05,
+          repeatType: "reverse",
+          ease: "easeOut",
+          delay: 0.05,
+        }}
+        className="absolute bottom-0 mb-8 text-center text-white opacity-50 lg:right-0 z-100 right-50 mx-14"
+      >
+        <FontAwesomeIcon icon={faSortDown} size="lg" />
+      </motion.div>
     </div>
   )
 }

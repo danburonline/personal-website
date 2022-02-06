@@ -57,7 +57,7 @@ export default function DanielModel({
 
   const { nodes } = useGLTF("./models/daniel-transformed.glb") as unknown as DanielModelGLTFResult
   return (
-    <animated.group scale={scale} ref={danielModelRef} dispose={null}>
+    <animated.group scale={scale} position={[0.05, 0, 0]} ref={danielModelRef} dispose={null}>
       <mesh geometry={nodes.Daniel.geometry}>
         <meshStandardMaterial color={propsColor} />
       </mesh>

@@ -74,7 +74,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "Instagram",
-    description: "Personal blog of my life with random pictures, videos and more random stories",
+    description: "Personal blog of my life with random pictures, videos and stories",
     href: "https://www.instagram.com/danburonline",
     icon: faInstagram,
     bgColor: "#d7155a",
