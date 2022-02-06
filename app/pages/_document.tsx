@@ -6,9 +6,9 @@ class CustomDocument extends Document {
       <Html lang="en" className="bg-gray-900">
         <DocumentHead />
         <meta property="og:title" content="Daniel Burger — Software Engineer" />
-        <meta property="og:site_name" content="Daniel Burger" />
+        <meta property="og:site_name" content="Daniel Burger — Software Engineer" />
         <meta property="og:url" content="https://danielburger.online" />
-        <meta property="og:image" content="/img/meta-image.png" />
+        <meta property="og:image" content="https://danielburger.online/img/og.png" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
