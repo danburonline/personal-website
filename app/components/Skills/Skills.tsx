@@ -43,7 +43,7 @@ export default function Skills() {
                     <p className="mt-5 text-lg text-gray-500">{skill.description}</p>
                   </div>
                   <div className="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-gray-50 sm:p-10 sm:pt-6">
-                    <ul role="list" className="space-y-4">
+                    <ul className="space-y-4">
                       {skill.features.map((feature) => (
                         <li key={feature} className="flex items-start">
                           <div className="flex-shrink-0">
