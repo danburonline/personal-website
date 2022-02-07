@@ -103,7 +103,7 @@ export default function Hero() {
           ease: "easeOut",
           delay: 0.05,
         }}
-        className="absolute bottom-0 mb-8 text-center text-white opacity-50 lg:right-0 z-100 right-50 mx-14"
+        className="absolute bottom-0 mb-12 text-center text-white opacity-50 lg:right-0 z-100 right-50 mx-14"
       >
         <FontAwesomeIcon icon={faSortDown} size="lg" />
       </motion.div>
