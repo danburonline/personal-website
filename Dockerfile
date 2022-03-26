@@ -7,8 +7,11 @@ WORKDIR /usr/app
 # Copy application from the repository to the app directory
 COPY . .
 
+# Ignore the Node engine
+RUN yarn config set ignore-engines true
+
 # Install production dependencies
-RUN yarn install
+RUN yarn install --pure-lockfile
 
 # Build the Blitz build application
 RUN yarn build
