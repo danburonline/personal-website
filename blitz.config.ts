@@ -1,17 +1,13 @@
 import { BlitzConfig } from "blitz"
+import withPWA from "next-pwa"
 
-const config: BlitzConfig = {
-  /* Uncomment this to customize the webpack config
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // Note: we provide webpack above so you should not `require` it
-    // Perform customizations to webpack config
-    // Important: return the modified config
-    return config
+const config: BlitzConfig = withPWA({
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+    disable: process.env.NODE_ENV === "development",
   },
-  */
-  images: {
-    domains: ["tailwindui.com"],
-  },
-}
+})
 
 export default config

@@ -12,6 +12,8 @@ class CustomDocument extends Document {
           />
           <meta name="robots" content="follow, index" />
           <link rel="canonical" href="https://danielburger.online/" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
           <meta name="theme-color" content="#111827" />
           <meta property="og:locale" content="en_GB" />
           <meta property="og:type" content="website" />
