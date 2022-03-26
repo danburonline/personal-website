@@ -2,13 +2,11 @@ import type { IconDefinition } from "@fortawesome/fontawesome-common-types"
 import {
   faGithub,
   faMediumM,
-  faBehance,
   faLinkedin,
   faFacebook,
   faTwitter,
   faInstagram,
   faYoutube,
-  faTwitch,
   faTiktok,
   faDribbble,
 } from "@fortawesome/free-brands-svg-icons"
@@ -45,11 +43,11 @@ const socialMediaChannels: socialMediaChannelType[] = [
     bgColor: "#fd7e14",
   },
   {
-    name: "Behance",
-    description: "Work portfolio about all public projects related to interaction design.",
-    href: "https://www.behance.net/danburonline",
-    icon: faBehance,
-    bgColor: "#0057ff",
+    name: "YouTube",
+    description: "Videos about all my projects, interviews, demos and other interesting uploads",
+    href: "https://www.youtube.com/c/DanielBurgerOnline",
+    icon: faYoutube,
+    bgColor: "#fb000a",
   },
   {
     name: "LinkedIn",
@@ -60,7 +58,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "Facebook",
-    description: "Profile with life updates that I use to engage myself in group discussions",
+    description: "Private profile that I use to engage myself in group discussions and events",
     href: "https://www.facebook.com/danburonline",
     icon: faFacebook,
     bgColor: "#3b5998",
@@ -78,20 +76,6 @@ const socialMediaChannels: socialMediaChannelType[] = [
     href: "https://www.instagram.com/danburonline",
     icon: faInstagram,
     bgColor: "#d7155a",
-  },
-  {
-    name: "YouTube",
-    description: "Videos about all my projects, interviews, demos and other interesting uploads",
-    href: "https://www.youtube.com/c/DanielBurgerOnline",
-    icon: faYoutube,
-    bgColor: "#fb000a",
-  },
-  {
-    name: "Twitch",
-    description: "Livestream channel when I think I have something cool to show or talk about",
-    href: "https://www.twitch.tv/danburonline",
-    icon: faTwitch,
-    bgColor: "#9146ff",
   },
   {
     name: "TikTok",

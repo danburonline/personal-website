@@ -8,7 +8,7 @@ WORKDIR /usr/app
 COPY . .
 
 # Install production dependencies
-RUN yarn install --pure-lockfile
+RUN yarn install
 
 # Build the Blitz build application
 RUN yarn build
