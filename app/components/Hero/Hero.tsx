@@ -80,7 +80,7 @@ export default function Hero() {
                 className="mt-3 rounded-md shadow pointer-events-auto sm:mt-0 sm:ml-3"
               >
                 <a
-                  href="https://calendly.com/danburonline/meet"
+                  href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ06eblMW7_iQq2HWz2e7I7SJcYE1Z-m9HrCw9tgbiwBqIirhAwIaKWjIVUbCBgDiuzeKYbbjQwd"
                   target="_blank"
                   className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-gray-800 transition-colors bg-white border border-transparent rounded-md hover:bg-gray-200 md:py-4 md:text-lg md:px-10"
                   rel="noreferrer"
