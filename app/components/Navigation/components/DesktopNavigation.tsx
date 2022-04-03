@@ -83,10 +83,10 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
                         </div>
                         <div className="p-5 bg-gray-50 sm:p-8">
                           <a
-                            href="https://www.spreaker.com/user/16456406"
+                            // href="https://anchor.fm/danburonline"
                             target="_blank"
                             rel="noreferrer"
-                            className="flex flex-row p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-100"
+                            className="flex flex-row p-3 -m-3 transition duration-150 ease-in-out rounded-md cursor-wait hover:bg-gray-100"
                           >
                             <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-gray-900 bg-gray-200 rounded-md sm:h-12 sm:w-12">
                               <FontAwesomeIcon
@@ -99,7 +99,7 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
                             <span className="ml-4">
                               <span className="flex items-center">
                                 <span className="text-base font-medium text-gray-900">
-                                  Listen to my podcast →
+                                  <span className="font-bold">Soon:</span> Listen to my podcast →
                                 </span>
                               </span>
                               <span className="block mt-1 text-sm text-gray-500">
