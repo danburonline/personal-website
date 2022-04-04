@@ -85,7 +85,9 @@ export default function MobileNavigation(props: { adjustBodyScroll: (arg0: boole
                           icon={faHeadphones}
                         />
                       </div>
-                      <div className="ml-4 text-base font-medium text-gray-900">Podcast</div>
+                      <div className="ml-4 text-base font-medium text-gray-900">
+                        Podcast (coming soon)
+                      </div>
                     </a>
                   </nav>
                 </div>
