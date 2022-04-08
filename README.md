@@ -14,12 +14,6 @@ Complete source code of my personal website utilising the alpha version of Blitz
 
 ## Guides
 
-### Run the build Docker image
-
-- Build the Docker image with `docker build . -t personal-website:latest`.
-- Run the created image with `docker run -p 8080:8080 personal-website`.
-- Access the site on <http://localhost:8080>.
-
 ### Run the dev server
 
 - Install all dependencies with `yarn`.
