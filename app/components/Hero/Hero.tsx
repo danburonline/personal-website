@@ -45,8 +45,8 @@ export default function Hero() {
               >
                 IDUN Technologies
               </a>{" "}
-              {isMobileWidth ? null : "in Zürich"} and combining spatial computing with artificial
-              intelligence at{" "}
+              {isMobileWidth ? null : "in Zürich"} and combining spatial computing with machine
+              learning at{" "}
               <a
                 href="https://www.mdx.ac.uk"
                 target="_blank"
