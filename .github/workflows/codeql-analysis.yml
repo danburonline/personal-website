@@ -1,4 +1,5 @@
-# Analyze the repository as soon as there is a new merge into the main branch (+ CRON job)
+# Analyze the repository as soon as there is a new merge into the main branch
+
 name: "Static Analysis"
 
 on:
