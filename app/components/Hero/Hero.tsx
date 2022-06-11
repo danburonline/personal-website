@@ -36,7 +36,7 @@ export default function Hero() {
               transition={{ delay: 0.05 }}
               className="mx-auto mt-3 text-base text-gray-300 md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl"
             >
-              Building brain-machine interface software at{" "}
+              Building brain-computer interface software at{" "}
               <a
                 href="https://iduntechnologies.com"
                 target="_blank"

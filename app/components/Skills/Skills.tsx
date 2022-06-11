@@ -80,7 +80,7 @@ export default function Skills() {
                     After a few years as an interactive media designer in the industry, I moved into
                     software engineering and later into neurotech.
                   </span>{" "}
-                  When working on brain-machine interface software, I believe it’s advantageous to
+                  When working on brain-computer interface software, I believe it’s advantageous to
                   apply a deep knowledge of design thinking and a constant focus on user experience,
                   particularly in the experimental field of virtual reality in combination with
                   neural interfaces.
