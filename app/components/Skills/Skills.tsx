@@ -16,8 +16,7 @@ export default function Skills() {
             <h2 className="text-lg font-semibold leading-6 tracking-wider text-gray-300 uppercase">
               My Expertise
             </h2>
-            <p className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-              {!isMobileWidth && "Full-Stack"} Software for the Brain
+            <p className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">Software for the Brain
             </p>
             <p className="text-xl text-gray-300">
               Production-grade and {!isMobileWidth && "highly scalable"} with a focus on real-time
