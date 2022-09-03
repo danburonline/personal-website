@@ -36,7 +36,7 @@ export default function Hero() {
               transition={{ delay: 0.05 }}
               className="mx-auto mt-3 text-base text-gray-300 md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl"
             >
-              Building brain-computer interface software at{" "}
+              Developing brain-computer interface software at{" "}
               <a
                 href="https://iduntechnologies.com"
                 target="_blank"
@@ -45,16 +45,7 @@ export default function Hero() {
               >
                 IDUN Technologies
               </a>{" "}
-              and combining spatial computing with machine learning at{" "}
-              <a
-                href="https://www.mdx.ac.uk"
-                target="_blank"
-                rel="noreferrer"
-                className="pointer-events-auto hover:underline"
-              >
-                Middlesex University
-              </a>
-              {isMobileWidth ? null : ", London"}.
+              and experimenting with machine learning and spatial computing.
             </motion.h2>
 
             <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
