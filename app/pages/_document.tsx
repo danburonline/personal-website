@@ -8,7 +8,7 @@ class CustomDocument extends Document {
           <title>Daniel Burger — Software Engineer</title>
           <meta
             name="description"
-            content="Full-stack neurotech software engineer with several years of interdisciplinary work experience in a technologically diverse background dedicated to clean code and lean architectures. Currently, I'm developing brain-computer interface software at IDUN Technologies and studying web development with a focus on spatial computing at Middlesex University."
+            content="Versatile software engineer with interdisciplinary professional experience in a technologically diverse environment dedicated to clean code and lean architectures. I am currently developing brain-computer interface software at IDUN Technologies and studying machine learning with a focus on spatial computing in a handful of boot camps."
           />
           <meta name="robots" content="follow, index" />
           <link rel="canonical" href="https://danielburger.online/" />

@@ -2,9 +2,7 @@
   "recommendations": [
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
-    "mikestead.dotenv",
-    "mgmcdermott.vscode-language-babel",
-    "prisma.prisma"
+    "dotenv.dotenv-vscode",
   ],
   "unwantedRecommendations": []
 }
