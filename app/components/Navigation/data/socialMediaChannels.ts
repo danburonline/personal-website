@@ -37,7 +37,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "Medium",
-    description: "Blog posts about technological discussions and philosophical ideas",
+    description: "Essays about technological discussions and philosophical ideas",
     href: "https://danburonline.medium.com",
     icon: faMediumM,
     bgColor: "#fd7e14",
@@ -51,7 +51,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "LinkedIn",
-    description: "Curriculum vitae, qualifications, important updates and all blog posts",
+    description: "Curriculum vitae, qualifications, important updates and all essays",
     href: "https://www.linkedin.com/in/danburonline",
     icon: faLinkedin,
     bgColor: "#0077B5",
