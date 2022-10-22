@@ -40,7 +40,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
     description: "Essays about technological discussions and philosophical ideas",
     href: "https://danburonline.medium.com",
     icon: faMediumM,
-    bgColor: "#fd7e14",
+    bgColor: "#1A8917",
   },
   {
     name: "YouTube",
