@@ -45,7 +45,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   {
     name: "YouTube",
     description: "Videos about all my projects, interviews, demos and other interesting uploads",
-    href: "https://www.youtube.com/c/DanielBurgerOnline",
+    href: "https://www.youtube.com/@danburonline",
     icon: faYoutube,
     bgColor: "#fb000a",
   },
