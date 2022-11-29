@@ -4,12 +4,10 @@ import {
   faGithub,
   faMediumM,
   faLinkedin,
-  faFacebook,
   faTwitter,
   faInstagram,
   faYoutube,
   faTiktok,
-  faDribbble,
 } from "@fortawesome/free-brands-svg-icons"
 
 export type socialMediaChannelType = {
@@ -37,10 +35,17 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "Medium",
-    description: "Essays about technological discussions and philosophical ideas",
+    description: "Essays about technological discussions and other interesting ideas",
     href: "https://danburonline.medium.com",
     icon: faMediumM,
     bgColor: "#1A8917",
+  },
+  {
+    name: "LinkedIn",
+    description: "Curriculum vitae, qualifications, important updates and other random stuff",
+    href: "https://www.linkedin.com/in/danburonline",
+    icon: faLinkedin,
+    bgColor: "#0077B5",
   },
   {
     name: "YouTube",
@@ -50,22 +55,15 @@ const socialMediaChannels: socialMediaChannelType[] = [
     bgColor: "#fb000a",
   },
   {
-    name: "LinkedIn",
-    description: "Curriculum vitae, qualifications, important updates and all essays",
-    href: "https://www.linkedin.com/in/danburonline",
-    icon: faLinkedin,
-    bgColor: "#0077B5",
-  },
-  {
-    name: "Facebook",
-    description: "Private profile that I use to engage myself in group discussions and events",
-    href: "https://www.facebook.com/danburonline",
-    icon: faFacebook,
-    bgColor: "#3b5998",
+    name: "TikTok",
+    description: "Video summaries of interesting things that are currently happening",
+    href: "https://www.tiktok.com/@danburonline",
+    icon: faTiktok,
+    bgColor: "#000000",
   },
   {
     name: "Twitter",
-    description: "Tweets about thoughts, opinions, random pictures and exciting retweets",
+    description: "Tweets about random thoughts, opinions, pictures and some videos",
     href: "https://twitter.com/danburonline",
     icon: faTwitter,
     bgColor: "#08a0e9",
@@ -76,20 +74,6 @@ const socialMediaChannels: socialMediaChannelType[] = [
     href: "https://www.instagram.com/danburonline",
     icon: faInstagram,
     bgColor: "#d7155a",
-  },
-  {
-    name: "TikTok",
-    description: "Video summaries of interesting things that are currently happening in my life",
-    href: "https://www.tiktok.com/@danburonline",
-    icon: faTiktok,
-    bgColor: "#000000",
-  },
-  {
-    name: "Dribbble",
-    description: "Shots of my work and personal projects based on UI design, 3D and illustration",
-    href: "https://dribbble.com/danburonline",
-    icon: faDribbble,
-    bgColor: "#ea4c89",
   },
 ]
 

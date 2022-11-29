@@ -35,7 +35,7 @@ export default function MobileNavigation(props: { adjustBodyScroll: (arg0: boole
                 focus
                 className="fixed inset-x-0 top-0 h-screen p-3 overflow-hidden transition transform origin-top-center md:hidden"
               >
-                <div className="h-[80vh] max-h-[54rem] pb-3 overflow-x-hidden overflow-y-scroll bg-white rounded-lg shadow-lg">
+                <div className="pb-3 overflow-x-hidden overflow-y-scroll bg-white rounded-lg shadow-lg">
                   <div className="items-center justify-between">
                     <div className="fixed flex pt-6 pb-5 -mr-2 bg-white rounded-lg w-full max-w-[calc(100%-1.5rem)]">
                       <Popover.Button className="inline-flex items-center justify-center p-2 pr-3 ml-6 text-gray-400 transition-colors bg-gray-100 rounded-md hover:text-gray-500">
@@ -68,27 +68,6 @@ export default function MobileNavigation(props: { adjustBodyScroll: (arg0: boole
                         <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
                       </a>
                     ))}
-                    <a
-                      key="podcast"
-                      // href="https://anchor.fm/danburonline"
-                      target="_blank"
-                      className="flex items-center pl-3 rounded-lg hover:bg-gray-50"
-                      rel="noreferrer"
-                    >
-                      <div
-                        style={{ backgroundColor: "#ffc107" }}
-                        className="flex items-center justify-center flex-shrink-0 w-10 h-10 mt-3 mb-3 text-white rounded-md"
-                      >
-                        <FontAwesomeIcon
-                          className="w-6 h-6"
-                          aria-hidden="true"
-                          icon={faHeadphones}
-                        />
-                      </div>
-                      <div className="ml-4 text-base font-medium text-gray-900">
-                        Podcast (coming soon)
-                      </div>
-                    </a>
                   </nav>
                 </div>
               </Popover.Panel>
