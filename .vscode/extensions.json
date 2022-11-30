@@ -1,8 +1,4 @@
 {
-  "recommendations": [
-    "editorconfig.editorconfig",
-    "esbenp.prettier-vscode",
-    "dotenv.dotenv-vscode",
-  ],
+  "recommendations": ["editorconfig.editorconfig", "esbenp.prettier-vscode"],
   "unwantedRecommendations": []
 }
