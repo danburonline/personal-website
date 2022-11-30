@@ -45,9 +45,9 @@ export default function DanielModel({
       if (rotateByDeviceOrientation) {
         if (gamma > 0.45 || gamma < -0.45) {
           const newGamma = gamma > 0.45 ? 0.45 : gamma < -0.45 ? -0.45 : 0
-          fiberEuler.set(0, newGamma * 0.5 * Math.PI, 0)
+          fiberEuler.set(0, -newGamma * 0.5 * Math.PI, 0)
         } else if (gamma < 0.45) {
-          fiberEuler.set(0, gamma * 0.5 * Math.PI, 0)
+          fiberEuler.set(0, -gamma * 0.5 * Math.PI, 0)
         }
 
         danielModelRef.current.quaternion.slerp(fiberQuaternion.setFromEuler(fiberEuler), 0.1)
