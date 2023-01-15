@@ -7,12 +7,7 @@ export default function TypeWriter() {
         textStyle={{ textAlign: "center" }}
         startDelay={100}
         cursorColor="#FFE000"
-        multiText={[
-          "Software Engineer",
-          "Web Developer",
-          "Interaction Designer",
-          "Aspiring Polymath",
-        ]}
+        multiText={["Software Engineer", "Web Developer", "Interaction Designer", "Neuroscientist"]}
         typeSpeed={100}
         multiTextLoop={true}
       />
