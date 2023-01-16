@@ -1,57 +1,23 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "blitz dev",
-    "build": "blitz build",
-    "start": "blitz start -p 8080",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
-    "prepare": "husky install",
-    "format": "prettier --write ."
-  },
-  "prettier": {
-    "semi": false,
-    "printWidth": 100
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix"
-    ]
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.36",
-    "@fortawesome/free-brands-svg-icons": "5.15.4",
-    "@fortawesome/free-solid-svg-icons": "5.15.4",
-    "@fortawesome/react-fontawesome": "0.1.16",
-    "@headlessui/react": "1.4.2",
-    "@react-spring/three": "9.3.1",
-    "@react-three/drei": "7.22.6",
-    "@react-three/fiber": "7.0.19",
-    "autoprefixer": "10.x",
-    "blitz": "0.45.3",
-    "framer-motion": "5.5.1",
-    "next-pwa": "5.4.6",
-    "postcss": "8.x",
-    "react": "18.0.0-alpha-5ca4b0433-20211020",
-    "react-dom": "18.0.0-alpha-5ca4b0433-20211020",
-    "react-responsive": "9.0.0-beta.5",
-    "react-typewriter-effect": "1.1.0",
-    "react-waypoint": "10.1.0",
-    "sharp": "0.30.5",
-    "tailwindcss": "2.x",
-    "three": "0.134.0",
-    "typewriter-effect": "2.18.2"
-  },
-  "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "3.2.0",
-    "@types/react": "17.0.36",
-    "@types/three": "0.134.0",
-    "eslint": "7.32.0",
-    "husky": "7.0.4",
-    "lint-staged": "11.3.0-beta.2",
-    "prettier": "2.4.1",
-    "pretty-quick": "3.1.2",
-    "typescript": "~4.4"
-  },
-  "private": true
+    "@next/font": "13.1.2",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.10",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.2",
+    "next": "13.1.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.4"
+  }
 }
