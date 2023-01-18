@@ -21,7 +21,7 @@ class CustomDocument extends Document {
           <meta property="og:site_name" content="Daniel Burger" />
           <meta
             property="og:description"
-            content="Versatile neurotech software engineer with interdisciplinary professional experience in a technologically diverse environment."
+            content="Versatile software engineer with interdisciplinary professional experience in a technologically diverse environment."
           />
           <meta name="author" content="Daniel Burger" />
           <meta property="og:url" content="https://danielburger.online" />
