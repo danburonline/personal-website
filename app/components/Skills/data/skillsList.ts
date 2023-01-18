@@ -1,6 +1,6 @@
 const skillsList = [
   {
-    skillTitle: "🧠 Neuroscience",
+    skillTitle: "🧠 Neurotech",
     description:
       "I work in the rapidly expanding and exciting neurotech industry, collaborating with machine learning experts and neuroscientists to create new technologies for understanding the human brain and interacting with the world via neural interfaces.",
     features: [

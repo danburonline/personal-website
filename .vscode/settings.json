@@ -4,5 +4,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "cSpell.words": ["Behance", "Dribbble", "Grüezi"]
+  "cSpell.words": [
+    "Behance",
+    "Dribbble",
+    "Grüezi",
+    "Neurotech"
+  ]
 }
