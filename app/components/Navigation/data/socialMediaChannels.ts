@@ -28,14 +28,14 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "ResearchGate",
-    description: "Research papers and articles of all my public research projects",
+    description: "Research papers and essays of all my public research projects",
     href: "https://www.researchgate.net/profile/Daniel-Burger-10",
     icon: faResearchgate,
     bgColor: "#00ccbb",
   },
   {
     name: "Medium",
-    description: "Essays about technological discussions and other interesting ideas",
+    description: "Articles about technological discussions and other interesting ideas",
     href: "https://danburonline.medium.com",
     icon: faMediumM,
     bgColor: "#1A8917",
