@@ -7,7 +7,7 @@ import {
   faTwitter,
   faInstagram,
   faYoutube,
-  faTiktok,
+  faFigma,
 } from "@fortawesome/free-brands-svg-icons"
 
 export type socialMediaChannelType = {
@@ -25,6 +25,13 @@ const socialMediaChannels: socialMediaChannelType[] = [
     href: "https://github.com/danburonline",
     icon: faGithub,
     bgColor: "#24292e",
+  },
+  {
+    name: "Figma",
+    description: "Visual designs, prototypes and mockups of all my public design projects",
+    href: "https://www.figma.com/@danburonline",
+    icon: faFigma,
+    bgColor: "#212121",
   },
   {
     name: "ResearchGate",
@@ -53,13 +60,6 @@ const socialMediaChannels: socialMediaChannelType[] = [
     href: "https://www.youtube.com/@danburonline",
     icon: faYoutube,
     bgColor: "#fb000a",
-  },
-  {
-    name: "TikTok",
-    description: "Video summaries of interesting things that are currently happening",
-    href: "https://www.tiktok.com/@danburonline",
-    icon: faTiktok,
-    bgColor: "#000000",
   },
   {
     name: "Twitter",
