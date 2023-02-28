@@ -27,13 +27,6 @@ const socialMediaChannels: socialMediaChannelType[] = [
     bgColor: "#24292e",
   },
   {
-    name: "Figma",
-    description: "Visual designs, prototypes and mockups of all my public design projects",
-    href: "https://www.figma.com/@danburonline",
-    icon: faFigma,
-    bgColor: "#212121",
-  },
-  {
     name: "ResearchGate",
     description: "Research papers and essays of all my public research projects",
     href: "https://www.researchgate.net/profile/Daniel-Burger-10",
@@ -60,6 +53,13 @@ const socialMediaChannels: socialMediaChannelType[] = [
     href: "https://www.youtube.com/@danburonline",
     icon: faYoutube,
     bgColor: "#fb000a",
+  },
+  {
+    name: "Figma",
+    description: "Visual designs, prototypes and mockups of all my public design projects",
+    href: "https://www.figma.com/@danburonline",
+    icon: faFigma,
+    bgColor: "#212121",
   },
   {
     name: "Twitter",
