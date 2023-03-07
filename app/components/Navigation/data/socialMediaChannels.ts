@@ -20,18 +20,18 @@ export type socialMediaChannelType = {
 
 const socialMediaChannels: socialMediaChannelType[] = [
   {
-    name: "GitHub",
-    description: "Source code, wikis and issues of all my public programming projects",
-    href: "https://github.com/danburonline",
-    icon: faGithub,
-    bgColor: "#24292e",
-  },
-  {
     name: "ResearchGate",
     description: "Research papers and essays of all my public research projects",
     href: "https://www.researchgate.net/profile/Daniel-Burger-10",
     icon: faResearchgate,
     bgColor: "#00ccbb",
+  },
+  {
+    name: "GitHub",
+    description: "Source code, wikis and issues of all my public programming projects",
+    href: "https://github.com/danburonline",
+    icon: faGithub,
+    bgColor: "#24292e",
   },
   {
     name: "Medium",
