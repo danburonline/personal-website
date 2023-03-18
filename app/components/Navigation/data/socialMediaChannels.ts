@@ -41,18 +41,18 @@ const socialMediaChannels: socialMediaChannelType[] = [
     bgColor: "#1A8917",
   },
   {
-    name: "LinkedIn",
-    description: "Curriculum vitae, qualifications, important updates and other random stuff",
-    href: "https://www.linkedin.com/in/danburonline",
-    icon: faLinkedin,
-    bgColor: "#0077B5",
-  },
-  {
     name: "YouTube",
     description: "Videos about all my projects, interviews, demos and other interesting uploads",
     href: "https://www.youtube.com/@danburonline",
     icon: faYoutube,
     bgColor: "#fb000a",
+  },
+  {
+    name: "Replit",
+    description: "Visual designs, prototypes and mockups of all my public design projects",
+    href: "https://replit.com/@danburonline",
+    icon: faFigma,
+    bgColor: "#212121",
   },
   {
     name: "Figma",
@@ -62,18 +62,18 @@ const socialMediaChannels: socialMediaChannelType[] = [
     bgColor: "#212121",
   },
   {
+    name: "LinkedIn",
+    description: "Curriculum vitae, qualifications, important updates and other random stuff",
+    href: "https://www.linkedin.com/in/danburonline",
+    icon: faLinkedin,
+    bgColor: "#0077B5",
+  },
+  {
     name: "Twitter",
     description: "Tweets about random thoughts, opinions, pictures and some videos",
     href: "https://twitter.com/danburonline",
     icon: faTwitter,
     bgColor: "#08a0e9",
-  },
-  {
-    name: "Instagram",
-    description: "Personal blog of my life with random pictures, videos and stories",
-    href: "https://www.instagram.com/danburonline",
-    icon: faInstagram,
-    bgColor: "#d7155a",
   },
 ]
 
