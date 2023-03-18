@@ -5,10 +5,10 @@ import {
   faMediumM,
   faLinkedin,
   faTwitter,
-  faInstagram,
   faYoutube,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons"
+import { faCode } from "@fortawesome/free-solid-svg-icons"
 
 export type socialMediaChannelType = {
   name: string
@@ -49,10 +49,10 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "Replit",
-    description: "Visual designs, prototypes and mockups of all my public design projects",
+    description: "Repls, demos and code snippets of all my public programming projects",
     href: "https://replit.com/@danburonline",
-    icon: faFigma,
-    bgColor: "#212121",
+    icon: faCode,
+    bgColor: "#F26207",
   },
   {
     name: "Figma",
