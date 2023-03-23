@@ -57,6 +57,7 @@ class CustomDocument extends Document {
           max-height: -webkit-fill-available;
           overflow-y: scroll;
           overflow-x: hidden;
+          overscroll-behavior-y: contain;
         }
         html {
           height: -webkit-fill-available;
