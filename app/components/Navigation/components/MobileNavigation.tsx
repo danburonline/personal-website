@@ -35,7 +35,7 @@ export default function MobileNavigation(props: { adjustBodyScroll: (arg0: boole
                 focus
                 className="fixed inset-x-0 top-0 p-3 overflow-hidden transition transform origin-top-center md:hidden"
               >
-                <div className="pb-3 max-h-[93vh] overflow-x-hidden overflow-y-scroll bg-white rounded-lg shadow-lg">
+                <div className="pb-3 max-h-[80vh] overflow-x-hidden overflow-y-scroll bg-white rounded-lg shadow-lg">
                   <div className="items-center justify-between">
                     <div className="fixed flex pt-6 pb-5 -mr-2 bg-white rounded-lg w-full max-w-[calc(100%-1.5rem)]">
                       <Popover.Button className="inline-flex items-center justify-center p-2 pr-3 ml-6 text-gray-400 transition-colors bg-gray-100 rounded-md hover:text-gray-500">
