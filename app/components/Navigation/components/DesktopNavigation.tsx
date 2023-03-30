@@ -1,6 +1,6 @@
 import classNames from "../../../utils/classNames"
 import socialMediaChannels from "../data/socialMediaChannels"
-import { faChevronDown, faHeadphones } from "@fortawesome/free-solid-svg-icons"
+import { faChevronDown, faInbox } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Popover, Transition } from "@headlessui/react"
 import { motion } from "framer-motion"
@@ -81,6 +81,19 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
                             </a>
                           ))}
                         </div>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href="https://medium.com/danielburger-news/newsletters/daniel-burgers-newsletter"
+                          className="block w-full p-4 font-medium text-center text-gray-900 transition-colors border-t border-gray-100 cursor-pointer bg-gray-50 rounded-e-md hover:bg-gray-100"
+                        >
+                          <FontAwesomeIcon
+                            icon={faInbox}
+                            className={"w-5 h-5 mr-3"}
+                            aria-hidden="true"
+                          />
+                          Subscribe to my newsletter
+                        </a>
                       </div>
                     </Popover.Panel>
                   </Transition>
