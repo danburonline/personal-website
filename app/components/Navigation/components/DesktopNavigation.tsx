@@ -54,7 +54,7 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
                   >
                     <Popover.Panel className="absolute z-10 w-screen max-w-md mt-3 -ml-4 transform lg:max-w-3xl">
                       <div className="h-full overflow-y-auto rounded-lg shadow-lg sm:max-h-[80vh] ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8 lg:grid-cols-2">
+                        <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8 lg:grid-cols-3">
                           {socialMediaChannels.map((item) => (
                             <a
                               key={item.name}
