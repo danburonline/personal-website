@@ -36,7 +36,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "GitHub",
-    description: "Code, wikis etc.",
+    description: "Code, issues etc.",
     href: "https://github.com/danburonline",
     icon: faGithub,
     bgColor: "#24292e",
