@@ -86,7 +86,7 @@ export default function MobileNavigation(props: { adjustBodyScroll: (arg0: boole
                         />
                       </div>
                       <div className="ml-4 text-base font-medium text-gray-900">
-                        Subscribe my Newsletter
+                        Subscribe to my newsletter
                       </div>
                     </a>
                   </nav>
