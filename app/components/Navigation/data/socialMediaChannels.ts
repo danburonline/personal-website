@@ -57,7 +57,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "Behance",
-    description: "Designs etc. ",
+    description: "Concepts, designs etc.",
     href: "https://www.behance.net/danburonline",
     icon: faBehance,
     bgColor: "#2356F6",
