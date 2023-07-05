@@ -64,7 +64,7 @@ const socialMediaChannels: socialMediaChannelType[] = [
   },
   {
     name: "LinkedIn",
-    description: "Resume, skills etc.",
+    description: "Resume, updates etc.",
     href: "https://www.linkedin.com/in/danburonline",
     icon: faLinkedin,
     bgColor: "#0077B5",
