@@ -84,7 +84,7 @@ export default function DesktopNavigation(props: { adjustBodyScroll: (arg0: bool
                         <a
                           target="_blank"
                           rel="noreferrer"
-                          href="https://danielburger.news"
+                          href="https://medium.com/danielburger-news/newsletters/daniel-burgers-newsletter"
                           className="block w-full p-4 font-medium text-center text-gray-900 transition-colors border-t border-gray-100 cursor-pointer bg-gray-50 rounded-e-md hover:bg-gray-100"
                         >
                           <FontAwesomeIcon
