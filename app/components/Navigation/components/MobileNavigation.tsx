@@ -73,7 +73,7 @@ export default function MobileNavigation(props: { adjustBodyScroll: (arg0: boole
                     ))}
                     <a
                       key="newsletter"
-                      href="https://medium.com/danielburger-news/newsletters/daniel-burgers-newsletter"
+                      href="https://danielburger.news"
                       target="_blank"
                       className="flex items-center pl-3 mt-4 bg-gray-100 rounded-lg hover:bg-gray-50"
                       rel="noreferrer"
