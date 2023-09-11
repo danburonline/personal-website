@@ -1,20 +1,19 @@
+import Scene from './components/Scene'
+
 export default function Home() {
   return (
-    <>
-      <div className="min-h-full">
-        <div className="py-10">
-          <header>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900">
-                Dashboard
-              </h1>
-            </div>
-          </header>
-          <main>
-            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 bg-dark"></div>
-          </main>
+    <section className="py-10">
+      <header>
+        <div className="max-w-7xl mx-4 sm:mx-6 lg:mx-8 mb-6">
+          <h1 className="text-3xl font-semibold font-serif">Example</h1>
+          <h2 className="text-xl">Next.js and React-Three-Fiber with Bun</h2>
         </div>
-      </div>
-    </>
+      </header>
+      <main>
+        <div className="sm:mx-6 lg:mx-8 bg-bright mx-4 aspect-video rounded-xl">
+          <Scene />
+        </div>
+      </main>
+    </section>
   )
 }

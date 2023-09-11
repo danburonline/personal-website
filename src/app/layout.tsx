@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           // Config font variables
           `${serifFont.variable} ${sansFont.variable} font-sans`,
           // Config default color variables
-          'bg-bright text-dark',
+          'bg-dark text-bright',
           // Config default layout variables
           'h-full'
         )}
