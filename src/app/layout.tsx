@@ -14,7 +14,11 @@ const sansFont = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Daniel Burger'
+  title: 'Daniel Burger',
+  creator: 'Daniel Burger',
+  viewport: 'width=device-width, initial-scale=1',
+  manifest: '../../public/manifest.json',
+  themeColor: '#1A001A'
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
