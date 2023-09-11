@@ -4,9 +4,9 @@
 
 I release patches for security vulnerabilities based on Dependbot scans or CodeQL analyses. Here's an overview of all supported versions:
 
-| Version | Supported                               |
-| ------- | --------------------------------------- |
-| …       | Currently no released version available |
+| Version | Supported   |
+| ------- | ----------- |
+| V3      | Coming soon |
 
 ## Reporting a Vulnerability
 
