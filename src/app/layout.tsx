@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { ReactNode } from 'react'
+import { classNames } from './lib/functions'
 
 const serifFont = localFont({
   src: '../../public/fonts/sentient-variable.woff2',
