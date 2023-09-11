@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: 'Daniel Burger',
   creator: 'Daniel Burger',
   viewport: 'width=device-width, initial-scale=1',
-  manifest: '../../public/manifest.json',
+  manifest: 'manifest.json',
   themeColor: '#1A001A'
 }
 
