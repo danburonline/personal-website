@@ -3,12 +3,12 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { ReactNode } from 'react'
 
-const sentientFont = localFont({
+const serifFont = localFont({
   src: '../../public/fonts/sentient-variable.woff2',
   variable: '--font-sentient'
 })
 
-const workFont = localFont({
+const sansFont = localFont({
   src: '../../public/fonts/work-variable.woff2',
   variable: '--font-work'
 })
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${sentientFont.variable} ${workFont.variable} font-sans`}>{children}</body>
+      <body className={`${serifFont.variable} ${sansFont.variable} font-sans`}>{children}</body>
     </html>
   )
 }
