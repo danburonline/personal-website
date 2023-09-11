@@ -24,8 +24,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${serifFont.variable} ${sansFont.variable} font-sans bg-dark text-bright`}>
+    <html lang="en" className="h-full">
+      <body
+        className={classNames(
+          // Config font variables
+          `${serifFont.variable} ${sansFont.variable} font-sans`,
+          // Config default color variables
+          'bg-bright text-dark',
+          // Config default layout variables
+          'h-full'
+        )}
+      >
         {children}
       </body>
     </html>
