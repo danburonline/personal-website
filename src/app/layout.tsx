@@ -15,6 +15,7 @@ const sansFont = localFont({
 
 export const metadata: Metadata = {
   title: 'Daniel Burger',
+  description: 'Personal website of Daniel Burger. More to come.',
   creator: 'Daniel Burger',
   viewport: 'width=device-width, initial-scale=1',
   manifest: 'manifest.json',
