@@ -1,9 +1,17 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import { ReactNode } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+const sentientFont = localFont({
+  src: '../../public/fonts/sentient-variable.woff2',
+  variable: '--font-sentient'
+})
+
+const workFont = localFont({
+  src: '../../public/fonts/work-variable.woff2',
+  variable: '--font-work'
+})
 
 export const metadata: Metadata = {
   title: 'Daniel Burger',
@@ -13,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${sentientFont.variable} ${workFont.variable} font-sans`}>{children}</body>
     </html>
   )
 }
