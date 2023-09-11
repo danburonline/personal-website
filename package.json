@@ -15,6 +15,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@react-three/drei": "9.83.9",
     "@react-three/fiber": "8.14.1",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
