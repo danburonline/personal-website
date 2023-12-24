@@ -26,10 +26,10 @@ class CustomDocument extends Document {
           <meta name="author" content="Daniel Burger" />
           <meta property="og:url" content="https://danielburger.online" />
           <meta property="og:updated_time" content="2022-02-04T09:55:23-05:00" />
-          <meta property="og:image" content="https://danielburger.online/img/metaog-image.png" />
+          <meta property="og:image" content="https://danielburger.online/img/metaog-image.jpg" />
           <meta
             property="og:image:secure_url"
-            content="https://danielburger.online/img/metaog-image.png"
+            content="https://danielburger.online/img/metaog-image.jpg"
           />
           <meta property="og:image:width" content="600" />
           <meta property="og:image:height" content="600" />
