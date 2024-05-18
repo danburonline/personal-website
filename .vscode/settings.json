@@ -1,8 +1,0 @@
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  "cSpell.words": ["Behance", "Dribbble", "Grüezi", "Neuro", "Neurotech", "Replit", "Repls"]
-}
