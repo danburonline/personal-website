@@ -15,7 +15,7 @@ export default function Hero() {
   })
 
   return (
-    <div className="relative z-20 flex items-center justify-center w-full h-screen overflow-hidden pointer-events-none min-h-small">
+    <div className="flex overflow-hidden relative z-20 justify-center items-center w-full h-screen pointer-events-none min-h-small">
       <HeroDecorations />
       <div className="relative pt-6 pb-16 sm:pb-24">
         <main className="px-6 mx-auto mt-16 max-w-7xl sm:mt-24">
@@ -48,7 +48,7 @@ export default function Hero() {
               and experimenting with machine learning and spatial computing.
             </motion.h2>
 
-            <div className="max-w-lg mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
+            <div className="mx-auto mt-5 max-w-lg sm:flex sm:justify-center md:mt-8">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -57,7 +57,7 @@ export default function Hero() {
               >
                 <a
                   href="mailto:public@danielburger.online"
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-gray-800 transition-colors border border-transparent rounded-md bg-primary hover:bg-primaryDark md:py-4 md:text-lg md:px-10"
+                  className="flex justify-center items-center px-8 py-3 w-full text-base font-medium text-gray-800 rounded-md border border-transparent transition-colors bg-primary hover:bg-primaryDark md:py-4 md:text-lg md:px-10"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
                   Contact me
@@ -72,7 +72,7 @@ export default function Hero() {
                 <a
                   href="https://cal.com/danburonline"
                   target="_blank"
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-gray-800 transition-colors bg-white border border-transparent rounded-md hover:bg-gray-200 md:py-4 md:text-lg md:px-10"
+                  className="flex justify-center items-center px-8 py-3 w-full text-base font-medium text-gray-800 bg-white rounded-md border border-transparent transition-colors hover:bg-gray-200 md:py-4 md:text-lg md:px-10"
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon icon={faCalendar} className="mr-3" />
@@ -93,7 +93,7 @@ export default function Hero() {
           ease: "easeOut",
           delay: 0.05,
         }}
-        className="absolute bottom-0 mb-12 text-center text-white opacity-50 lg:right-0 z-100 right-50 mx-14"
+        className="absolute bottom-0 mx-14 mb-12 text-center text-white opacity-50 lg:right-0 z-100 right-50"
       >
         <FontAwesomeIcon icon={faSortDown} size="lg" />
       </motion.div>
