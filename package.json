@@ -2,12 +2,12 @@
   "name": "personal-website",
   "version": "1.0.0",
   "scripts": {
-    "dev": "blitz dev",
-    "build": "blitz build",
-    "start": "blitz start -p 8080",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
-    "prepare": "husky install",
-    "format": "prettier --write ."
+    "dev": "NODE_OPTIONS='--openssl-legacy-provider' blitz dev",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' blitz build",
+    "start": "NODE_OPTIONS='--openssl-legacy-provider' blitz start -p 8080",
+    "lint": "NODE_OPTIONS='--openssl-legacy-provider' eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "prepare": "NODE_OPTIONS='--openssl-legacy-provider' husky install",
+    "format": "NODE_OPTIONS='--openssl-legacy-provider' prettier --write ."
   },
   "prettier": {
     "semi": false,
