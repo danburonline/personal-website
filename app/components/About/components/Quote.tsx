@@ -11,8 +11,8 @@ export default function Quote() {
       <div className="text-2xl font-medium leading-9 text-gray-900">
         <h3>
           <span className="font-bold">
-            I’m a software engineer specializing in {!isMobileWidth && "non-invasive"}{" "}
-            neural interfaces and {!isMobileWidth && "web-based"} virtual reality.
+            I’m a software engineer specializing in {!isMobileWidth && "non-invasive"} neural
+            interfaces and {!isMobileWidth && "web-based"} virtual reality.
           </span>{" "}
           I’m fascinated by machine learning and neuroscience, and I believe that one day we’ll be
           able to directly engineer our brains’ perception of reality for the benefit of humanity.
@@ -31,7 +31,7 @@ export default function Quote() {
           </div>
           <div className="ml-4 lg:ml-0">
             <div className="text-base font-bold text-gray-900">Daniel Burger</div>
-            <div className="text-base font-medium text-gray-500">Living in Switzerland</div>
+            <div className="text-base font-medium text-gray-500">@danburonline</div>
           </div>
         </div>
       </footer>

@@ -1,3 +1,3 @@
-import Daniel from "./Daniel"
+import Brain from "./Brain"
 
-export default Daniel
+export default Brain

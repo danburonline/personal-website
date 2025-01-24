@@ -5,7 +5,7 @@ import { Image } from "blitz"
 
 export default function About() {
   return (
-    <section className="overflow-hidden bg-white">
+    <section className="overflow-hidden bg-[#FFF7FF]">
       <div className="relative px-4 pt-20 pb-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-20">
         <BackgroundDecoration />
         <div className="relative lg:flex lg:items-center">

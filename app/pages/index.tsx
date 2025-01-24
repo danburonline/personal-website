@@ -1,15 +1,16 @@
-import About from "../components/About"
 import Hero from "../components/Hero"
-import Navigation from "../components/Navigation"
-import Skills from "../components/Skills"
 import { config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
-import { BlitzPage, dynamic } from "blitz"
+import { dynamic } from "blitz"
+import type { BlitzPage } from "blitz"
 
+// import About from "../components/About";
+// import Navigation from "../components/Navigation";
+// import Skills from "../components/Skills";
 // import { Waypoint } from "react-waypoint"
 // import { useState } from "react"
 
-const LazyDaniel = dynamic(() => import("../components/Daniel"), {
+const LazyBrainModel = dynamic(() => import("../components/Daniel"), {
   ssr: false,
 })
 
@@ -18,12 +19,12 @@ const Home: BlitzPage = () => {
 
   return (
     <>
-      <LazyDaniel />
-      <Navigation />
+      <LazyBrainModel />
+      {/* <Navigation /> */}
       <Hero />
-      <About />
-      <Skills />
-      {/* <Waypoint onEnter={() => setLoadBelowTheFold(true)}>
+      {/* <About /> */}
+      {/* <Skills />
+      <Waypoint onEnter={() => setLoadBelowTheFold(true)}>
         <div>{loadBelowTheFold && <Skills />}</div>
       </Waypoint> */}
     </>

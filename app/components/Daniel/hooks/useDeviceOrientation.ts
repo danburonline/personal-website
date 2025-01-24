@@ -22,6 +22,7 @@ export default function useDeviceOrientation() {
     }))
   }
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     window.addEventListener("deviceorientation", handleDeviceOrientation)
     return () => window.removeEventListener("deviceorientation", handleDeviceOrientation)

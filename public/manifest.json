@@ -1,12 +1,12 @@
 {
-  "theme_color": "#111827",
-  "background_color": "#111827",
+  "theme_color": "#1A001A",
+  "background_color": "#1A001A",
   "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
   "name": "Daniel Burger",
   "short_name": "Daniel Burger",
-  "description": "Versatile software engineer with interdisciplinary professional experience in a technologically diverse environment dedicated to clean code and lean architectures. I am currently developing brain-computer interface software at IDUN Technologies and studying machine learning with a focus on spatial computing in a handful of boot camps.",
+  "description": "Interdisciplinary neuroengineer developing augmented progressive brain replacement — a radical procedure for treating neurodegeneration, brain injuries, and ageing through patient-specific neural grafts designed for piece-wise replacement and neuronal-level modulation. I lead Eightsix Science, an applied neuroscience startup I founded, to combine neural tissue engineering, biohybrid brain-computer interfaces, and microsurgery to seamlessly integrate these optimised grafts with the host’s brain. Ultimately, we aim to achieve ectopic cognitive preservation, an approach to sustain cognition outside its original biological context and potentially within virtual reality.",
   "icons": [
     {
       "src": "/icon-192x192.png",

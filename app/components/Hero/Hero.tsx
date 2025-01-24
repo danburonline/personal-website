@@ -1,5 +1,5 @@
 import HeroDecorations from "./components/HeroDecorations"
-import { faEnvelope, faCalendar, faSortDown } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faCalendar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { dynamic } from "blitz"
 import { motion } from "framer-motion"
@@ -24,7 +24,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.05 }}
-              className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl"
+              className="text-4xl font-extrabold tracking-tight text-[#FFF7FF] sm:text-5xl md:text-6xl"
             >
               <span className="block">Daniel Burger</span>
               <TypeWriter />
@@ -34,18 +34,18 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.05 }}
-              className="mx-auto mt-3 text-base text-gray-300 md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl"
+              className="mx-auto mt-3 text-base text-[#AB93AB] md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl"
             >
-              Developing brain-computer interface software at{" "}
+              Interdisciplinary neuroengineer and founder of{" "}
               <a
-                href="https://iduntechnologies.com"
+                href="https://eightsix.science"
                 target="_blank"
                 rel="noreferrer"
                 className="pointer-events-auto hover:underline"
               >
-                IDUN Technologies
+                Eightsix Science
               </a>{" "}
-              and experimenting with machine learning and spatial computing.
+              researching better substrates for synthetic consciousness.
             </motion.h2>
 
             <div className="mx-auto mt-5 max-w-lg sm:flex sm:justify-center md:mt-8">
@@ -56,8 +56,8 @@ export default function Hero() {
                 className="rounded-md shadow pointer-events-auto"
               >
                 <a
-                  href="mailto:public@danielburger.online"
-                  className="flex justify-center items-center px-8 py-3 w-full text-base font-medium text-gray-800 rounded-md border border-transparent transition-colors bg-primary hover:bg-primaryDark md:py-4 md:text-lg md:px-10"
+                  href="mailto:mail@danielburger.online"
+                  className="flex justify-center items-center px-8 py-3 w-full text-base font-medium text-[#1A001A] rounded-md border border-transparent transition-colors bg-primary hover:bg-primaryDark md:py-4 md:text-lg md:px-10"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
                   Contact me
@@ -72,7 +72,7 @@ export default function Hero() {
                 <a
                   href="https://cal.com/danburonline"
                   target="_blank"
-                  className="flex justify-center items-center px-8 py-3 w-full text-base font-medium text-gray-800 bg-white rounded-md border border-transparent transition-colors hover:bg-gray-200 md:py-4 md:text-lg md:px-10"
+                  className="flex justify-center items-center px-8 py-3 w-full text-base font-medium text-[#1A001A] bg-[#FFF7FF] rounded-md border border-transparent transition-colors hover:bg-[#F2E6F2] md:py-4 md:text-lg md:px-10"
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon icon={faCalendar} className="mr-3" />
@@ -83,20 +83,6 @@ export default function Hero() {
           </div>
         </main>
       </div>
-      <motion.div
-        initial={{ translateY: 0, opacity: 0 }}
-        animate={{ translateY: -20, opacity: 0.25 }}
-        transition={{
-          repeat: Infinity,
-          repeatDelay: 0.05,
-          repeatType: "reverse",
-          ease: "easeOut",
-          delay: 0.05,
-        }}
-        className="absolute bottom-0 mx-14 mb-12 text-center text-white opacity-50 lg:right-0 z-100 right-50"
-      >
-        <FontAwesomeIcon icon={faSortDown} size="lg" />
-      </motion.div>
     </div>
   )
 }

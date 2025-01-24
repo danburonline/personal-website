@@ -6,8 +6,8 @@ export default function TypeWriter() {
       <TypeWriterEffect
         textStyle={{ textAlign: "center" }}
         startDelay={100}
-        cursorColor="#FFE000"
-        multiText={["Neurotechnologist", "Neuroscientist", "AI Researcher", "Software Engineer"]}
+        cursorColor="#FF40FF"
+        multiText={["Neuroengineer", "Startup Founder", "Neuroscientist"]}
         typeSpeed={100}
         multiTextLoop={true}
       />

@@ -3,8 +3,9 @@ import { animated, useSpring, config } from "@react-spring/three"
 import { useGLTF } from "@react-three/drei"
 import { useFrame, useThree } from "@react-three/fiber"
 import { useEffect, useMemo, useRef, useState } from "react"
-import { Euler, Mesh, Quaternion } from "three"
-import { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
+import { Euler, Quaternion } from "three"
+import type { Mesh } from "three"
+import type { GLTF } from "three/examples/jsm/loaders/GLTFLoader"
 
 type DanielModelGLTFResult = GLTF & {
   nodes: {
@@ -20,7 +21,7 @@ type DanielModelProps = {
 
 export default function DanielModel({
   scale: propsScale = 1.3,
-  color: propsColor = "#FFE000",
+  color: propsColor = "#FF40FF",
   rotateByDeviceOrientation = false,
 }: DanielModelProps) {
   const danielModelRef = useRef<Mesh>()
@@ -33,12 +34,13 @@ export default function DanielModel({
     config: config.stiff,
   })
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     setDoneLoading(true)
   }, [setDoneLoading])
 
   useFrame(() => {
-    if (danielModelRef && danielModelRef.current) {
+    if (danielModelRef?.current) {
       fiberEuler.set((-mouse.y * Math.PI) / 10, (mouse.x * Math.PI) / 6, 0)
       danielModelRef.current.quaternion.slerp(fiberQuaternion.setFromEuler(fiberEuler), 0.1)
 

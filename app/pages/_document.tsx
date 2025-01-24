@@ -3,25 +3,25 @@ import { Document, Html, Main, BlitzScript, DocumentHead } from "blitz"
 class CustomDocument extends Document {
   render() {
     return (
-      <Html lang="en" className="bg-gray-900">
+      <Html lang="en" className="bg-[#1A001A]">
         <DocumentHead>
-          <title>Daniel Burger — Software Engineer</title>
+          <title>Daniel Burger — Neuroengineer</title>
           <meta
             name="description"
-            content="Versatile software engineer with interdisciplinary professional experience in a technologically diverse environment dedicated to clean code and lean architectures. I am currently developing brain-computer interface software at IDUN Technologies and studying machine learning with a focus on spatial computing in a handful of boot camps."
+            content="Interdisciplinary neuroengineer developing augmented progressive brain replacement — a radical procedure for treating neurodegeneration, brain injuries, and ageing through patient-specific neural grafts designed for piece-wise replacement and neuronal-level modulation. I lead Eightsix Science, an applied neuroscience startup I founded, to combine neural tissue engineering, biohybrid brain-computer interfaces, and microsurgery to seamlessly integrate these optimised grafts with the host’s brain. Ultimately, we aim to achieve ectopic cognitive preservation, an approach to sustain cognition outside its original biological context and potentially within virtual reality."
           />
           <meta name="robots" content="follow, index" />
           <link rel="canonical" href="https://danielburger.online/" />
           <link rel="manifest" href="/manifest.json" />
-          <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
-          <meta name="theme-color" content="#111827" />
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+          <meta name="theme-color" content="#1A001A" />
           <meta property="og:locale" content="en_GB" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Daniel Burger — Software Engineer" />
+          <meta property="og:title" content="Daniel Burger — Neuroengineer" />
           <meta property="og:site_name" content="Daniel Burger" />
           <meta
             property="og:description"
-            content="Versatile software engineer with interdisciplinary professional experience in a technologically diverse environment."
+            content="Interdisciplinary neuroengineer developing augmented progressive brain replacement and ectopic cognitive preservation."
           />
           <meta name="author" content="Daniel Burger" />
           <meta property="og:url" content="https://danielburger.online" />
@@ -39,15 +39,15 @@ class CustomDocument extends Document {
           <meta property="twitter:site" content="@danburonline" />
           <style>{`
         ::-moz-selection {
-          background: #FFE000;
+          background: #FF40FF;
           color: black;
         }
         ::-webkit-selection {
-          background: #FFE000;
+          background: #FF40FF;
           color: black;
         }
         ::selection {
-          background: #FFE000;
+          background: #FF40FF;
           color: black;
         }
 
