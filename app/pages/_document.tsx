@@ -8,7 +8,7 @@ class CustomDocument extends Document {
           <title>Daniel Burger — Neuroengineer</title>
           <meta
             name="description"
-            content="Interdisciplinary neuroengineer developing augmented progressive brain replacement — a radical procedure for treating neurodegeneration, brain injuries, and ageing through patient-specific neural grafts designed for piece-wise replacement and neuronal-level modulation. I lead Eightsix Science, an applied neuroscience startup I founded, to combine neural tissue engineering, biohybrid brain-computer interfaces, and microsurgery to seamlessly integrate these optimised grafts with the host’s brain. Ultimately, we aim to achieve ectopic cognitive preservation, an approach to sustain cognition outside its original biological context and potentially within virtual reality."
+            content="Interdisciplinary neuroengineer developing augmented progressive brain replacement, a radical procedure for treating neurodegeneration, brain injuries, and ageing through patient-specific neural grafts designed for piece-wise replacement and neuronal-level modulation. At Eightsix Science, an applied neuroscience company, we combine neural tissue engineering, biohybrid brain-computer interfaces, and microsurgery to seamlessly integrate these optimised grafts with the host's brain. Ultimately, we aim to achieve ectopic cognitive preservation, an approach to sustain cognition outside its original biological context and potentially within virtual reality."
           />
           <meta name="robots" content="follow, index" />
           <link rel="canonical" href="https://danielburger.online/" />

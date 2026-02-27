@@ -36,7 +36,7 @@ export default function Hero() {
               transition={{ delay: 0.05 }}
               className="mx-auto mt-3 text-base text-[#AB93AB] md: sm:text-lg md:mt-5 md:text-xl sm:max-w-xl"
             >
-              Interdisciplinary neuroengineer and founder of{" "}
+              Interdisciplinary neuroengineer at{" "}
               <a
                 href="https://eightsix.science"
                 target="_blank"
